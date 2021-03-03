@@ -5,6 +5,26 @@ $white: #fff;
 $black: #000;
 $websiteBackground : #FCFCFC;
 
-@mixin webstie-margin {
+$laptopWidth: 1440px;
+$smallLaptopWidth: 1024px;
+$tabletWidth: 768px;
+$largePhoneWidth: 425px;
+$mediumPhoneWidth: 375px;
+$smallPhoneWidth: 320px;
+
+
+@mixin desktopWebstieMargin {
     margin: 0 150px;
+}
+
+@mixin laptopWebsiteMargin {
+    margin: 0 75px;
+}
+
+@mixin smallLaptopWebsiteMargin {
+    margin: 0 40px;
+}
+
+@mixin noMargin {
+    margin: 0;
 }
