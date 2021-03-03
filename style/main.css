@@ -23,6 +23,8 @@ body {
 .header {
   margin: 0 150px;
   background-image: url("../images/slider/slider-img1.jpg");
+  background-position: center;
+  background-size: cover;
   height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,5 +130,24 @@ body {
 
 .dot.active {
   background-color: #fff;
+}
+
+.header--arrow {
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+
+.header--arrow-left {
+  right: 97%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.header--arrow-right {
+  left: 97%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 /*# sourceMappingURL=main.css.map */

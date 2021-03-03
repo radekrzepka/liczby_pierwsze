@@ -18,6 +18,8 @@ body {
 .header {
     @include webstie-margin;
     background-image: url("../images/slider/slider-img1.jpg");
+    background-position: center;
+    background-size: cover;
     height: 800px;
     display: flex;
     flex-wrap: wrap;
@@ -105,4 +107,21 @@ body {
 
 .dot.active {
     background-color: $white;
+}
+
+.header--arrow {
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+}
+
+.header--arrow-left {
+    right: 97%;
+    transform: rotate(-90deg);
+}
+
+.header--arrow-right {
+    left: 97%;
+    transform: rotate(90deg);
 }
