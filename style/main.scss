@@ -11,14 +11,18 @@ body {
     flex-direction: column;
     justify-content: center;
     font-family: $mainFont;
+    background-color: $websiteBackground;
 }
 
 //header 
 .header {
     @include webstie-margin;
-    background-image: url("../images/banner-img.jpg");
+    background-image: url("../images/slider/slider-img1.jpg");
     height: 800px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
 }
 
 
@@ -31,7 +35,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 20px;
+    margin: 30px;
 }
 
 .navigation--logo {
@@ -68,4 +72,35 @@ body {
     padding: 10px 20px;
     border-radius: 26px;
     font-weight: bold;
+}
+
+.header--button {
+    color: $white;
+    background-color: $green;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    padding: 20px 70px;
+    position: absolute;
+    top: 50%; 
+    border-radius: 57px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.header--dots {
+    align-self: flex-end;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid $white;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: $white;
 }

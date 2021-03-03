@@ -17,15 +17,22 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Lato", sans-serif;
+  background-color: #FCFCFC;
 }
 
 .header {
   margin: 0 150px;
-  background-image: url("../images/banner-img.jpg");
+  background-image: url("../images/slider/slider-img1.jpg");
   height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
 .navigation {
@@ -44,7 +51,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px 20px;
+  margin: 30px;
 }
 
 .navigation--logo {
@@ -86,5 +93,37 @@ body {
   padding: 10px 20px;
   border-radius: 26px;
   font-weight: bold;
+}
+
+.header--button {
+  color: #fff;
+  background-color: #00ffa1;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 20px 70px;
+  position: absolute;
+  top: 50%;
+  border-radius: 57px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.header--dots {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
