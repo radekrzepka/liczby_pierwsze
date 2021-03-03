@@ -223,7 +223,14 @@
     }
 
     .navigation--logo {
-        margin-top: 20px;
+        width: 200px;
+        height: 30px;
+        margin-left: 20px;
+        margin-right: 150px;
+    }
+
+    .navigation--logo.open {
+        display: none;
     }
 
     .navigation.open {
@@ -237,6 +244,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-top: 20px;
     }
 }
 
@@ -247,5 +255,32 @@
     
     .header--arrow-right {
         left: 90%;
+    }
+    .header--button {
+        padding: 10px 30px;
+    }
+}
+
+@media(max-width: $mediumPhoneWidth) {
+    .navigation--logo {
+        width: 150px;
+        height: 25px;
+    }
+
+}
+
+@media(max-width: $smallPhoneWidth) {
+    .header--hamburger-icon {
+        right: 25px;
+        top: 45px;
+    }
+
+    .navigation {
+        height: 80px;
+        width: 90%;
+    }
+
+    .header--hamburger-icon span  {
+        height: 5px;
     }
 }
