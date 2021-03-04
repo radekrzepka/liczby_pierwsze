@@ -466,7 +466,7 @@ body {
   background-color: #FCFCFC;
 }
 
-.arrow-side {
+.arrow-image {
   width: 70px;
   height: 70px;
   position: -webkit-sticky;
@@ -476,12 +476,7 @@ body {
   cursor: pointer;
 }
 
-.arrow-side.closed {
+.arrow-image.closed {
   display: none;
-}
-
-.arrow-image {
-  height: 70px;
-  width: 70px;
 }
 /*# sourceMappingURL=main.css.map */

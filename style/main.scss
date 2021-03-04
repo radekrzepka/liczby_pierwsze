@@ -20,7 +20,7 @@ body {
     background-color: $websiteBackground; 
 }
 
-.arrow-side {
+.arrow-image {
     width: 70px;
     height: 70px;
     position: sticky;
@@ -29,11 +29,6 @@ body {
     cursor: pointer;
 }
 
-.arrow-side.closed {
+.arrow-image.closed {
     display: none;
-}
-
-.arrow-image {
-    height: 70px;
-    width: 70px;
 }
