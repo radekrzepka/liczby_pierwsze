@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+    font-family: $latoFont;
 }
 
 .navigation {
@@ -251,10 +252,12 @@
 @media(max-width: $largePhoneWidth) {
     .header--arrow-left {
         right: 90%;
+        top: 40%;
     }
     
     .header--arrow-right {
         left: 90%;
+        top: 40%;
     }
     .header--button {
         padding: 10px 30px;

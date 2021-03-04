@@ -1,14 +1,14 @@
 const slideList = [{
         img: "./images/slider/slider-img1.jpg",
-        text: "Rozpoczynamy!"
+        text: "W poszukiwaniu liczb pierwszych"
     },
     {
         img: "./images/slider/slider-img2.jpg",
-        text: "Historia"
+        text: "Algorytmy liczb pierwszych"
     },
     {
         img: "./images/slider/slider-img3.jpg",
-        text: "O mnie"
+        text: "O stronie"
     }
 ];
 

@@ -8,6 +8,8 @@
     <title>Liczby pierwsze</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css">
     <script src="./js/slider.js" defer></script>
     <script src="./js/hamburger-menu.js" defer></script>
@@ -19,7 +21,7 @@
             <img src="./images/logo.png" alt="Logo strony" class="navigation--logo">
             <ul class="navigation--list">
                 <li class="navigation--list__element">
-                    <a href="#" class="navigation--list__element--link">temat 1</a>
+                    <a href="#definicja" class="navigation--list__element--link">Definicja</a>
                 </li>
                 <li class="navigation--list__element">
                     <a href="#" class="navigation--list__element--link">temat 2</a>
@@ -46,7 +48,7 @@
                 <span></span>
             </div>
         </nav>
-        <button class="header--button">Rozpoczynamy!</button>
+        <button class="header--button">W poszukiwaniu liczb pierwszych</button>
         <div class="header--dots">
             <span class="dot active"></span>
             <span class="dot"></span>
@@ -55,6 +57,47 @@
         <img src="./images/icons/arrow.png" alt="left arrow" class="header--arrow header--arrow-left">
         <img src="./images/icons/arrow.png" alt="right arrow" class="header--arrow header--arrow-right">
     </header>
+    <main class="main">
+        <section class="section">
+            <div class="section--text">
+                <h3 class="section--text__header" id="definicja">Definicja</h3>
+
+                <p class="section--text__paragraph">Wszystkie liczby naturalne można podzielić na trzy typy.</p>
+
+                <p class="section--text__paragraph">Pierwsze to <strong>liczby pierwsze</strong>. Czym są liczby pierwsze nie trzeba chyba nikomu tłumaczyć. Wszyscy znamy definicje: liczba pierwsza to taka liczba naturalna większa od 1, która ma dokładnie dwa dzielniki naturalne: jedynkę i samą siebie.</p>
+
+                <p class="section--text__paragraph">Liczby, które nie są pierwsze, są żłożone. Można je rozkładać na dwa lub więcej czynników pierwszych</p>
+
+                <p class="section--text__paragraph">Wydawało by się, że coś jest nie tak bo przecież liczba jest albo pierwsza albo złożona, jednak liczbę 1 nie można zaliczyć ani do liczb pierwszych ani do złożonych o czym wspomnę później.</p>
+
+                <p class="section--text__paragraph">Jednak co jest takiego ciekawego w tych liczbach pierwszych, że aż tyle się o nich mówi. Już Euklides z Aleskandrii w IX księdze Elementów w wieku III p.n.e. udowodnił, że wszystkich liczb pierwszych jest nieskończenie wiele.</p>
+
+                <blockquote class="section--text__quote">
+                    <q class="section--text__quote--text">Załóżmy, że zbiór liczb pierwszych jest ograniczony. Utwórzmy iloczyn tych wszystkich liczb. Do tego iloczynu dodajmy 1. Otrzymana liczba nie będzie się dzielić przez żadną liczbę z naszego zbioru liczb pierwszych, gdyż zawsze pozostanie reszta 1. Wynika z tego, że albo otrzymana liczba jest też liczbą pierwszą, albo dzieli się ona przez jakąś inną liczbę pierwszą, nie zawartą w naszym zbiorze liczb pierwszych. W obydwu przypadkach oznacza to, że otrzymujemy nową liczbę pierwszą, co jest sprzeczne z założeniem, że zbiór zawierał wszystkie liczby pierwsze.</q>
+                    <p class="section--text__quote--author">Euklides</p>
+                </blockquote>
+
+                <p class="section--text__paragraph">Euklides również udowodnił podstawowe twierdznie arytmetyki</p>
+
+                <blockquote class="section--text__quote">
+                    <q class="section--text__quote--text">Każdą liczbę naturalną większą od 1, nie będącą liczbą pierwszą, można jednoznacznie przedstawić w postaci iloczynu liczb pierwszych.</q>
+                    <p class="section--text__quote--author">Euklides</p>
+                </blockquote>
+
+                <p class="section--text__paragraph">Te twierdznie wyklucza 1 jako liczbę pierwszą, ponieważ każdą z liczb złożonych można byłoby przedstawić na nieskończoną ilość sposobów np:</p>
+                
+                <p class="section--text__math">18 = 3 * 3 * 2 * 1</p>
+
+                <p class="section--text__math">18 = 3 * 3 * 2 * 1 * 1</p>
+
+                <p class="section--text__math">18 = 3 * 3 * 2 * 1 * 1 * 1</p>
+            </div>
+            <figure class="section--figure">
+                <img src="./images/Euklides.jpg" alt="Zdjęcie Euklidesa kreślącego na papierze" class="section--figure__image">
+                <figcaption class="section--figure__description">Euklides</figcaption>
+            </figure>
+        </section>
+    </main>
 </body>
 
 </html>
