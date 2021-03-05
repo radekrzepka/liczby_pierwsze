@@ -400,7 +400,7 @@
     margin: 0 40px;
   }
   .section--text {
-    margin-left: 0;
+    margin-left: 5px;
     width: 60%;
   }
   .section--figure {
@@ -423,7 +423,6 @@
             flex-direction: column;
   }
   .section--text {
-    margin-left: 0;
     width: 100%;
   }
   .section--text__header {
