@@ -251,12 +251,12 @@
 
 @media(max-width: $largePhoneWidth) {
     .header--arrow-left {
-        right: 90%;
+        right: 88%;
         top: 40%;
     }
     
     .header--arrow-right {
-        left: 90%;
+        left: 88%;
         top: 40%;
     }
     .header--button {
@@ -281,9 +281,5 @@
     .navigation {
         height: 80px;
         width: 90%;
-    }
-
-    .header--hamburger-icon span  {
-        height: 5px;
     }
 }
