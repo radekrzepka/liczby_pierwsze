@@ -315,55 +315,55 @@
   padding-top: 50px;
 }
 
-.section--text {
+.section__text {
   width: 70%;
   margin-left: 50px;
 }
 
-.section--text__paragraph {
+.section__text > * {
+  margin-bottom: 20px;
+}
+
+.section__text--paragraph {
   line-height: 1.6;
   font-size: 16px;
 }
 
-.section--text__math {
+.section__text--math {
   font-weight: bold;
 }
 
-.section--text * {
-  margin-bottom: 20px;
-}
-
-.section--text__main-header {
+.section__text--main-header {
   font-size: 44px;
 }
 
-.section--text__sidebar-header {
+.section__text--sidebar-header {
   font-size: 32px;
 }
 
-.section--text__quote {
+.section__text__quote {
   border-left: 5px solid #626161;
   padding: 6px;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.section--text__quote--text {
+.section__text__quote--text {
   color: #626161;
   font-style: italic;
 }
 
-.section--text__quote--author {
+.section__text__quote--author {
   margin: 5px 0 0 0;
   color: #969696;
   font-style: italic;
 }
 
-.section--text__quote--author:before {
+.section__text__quote--author:before {
   content: "- ";
 }
 
-.section--figure {
+.section__figure {
   width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -378,12 +378,12 @@
   margin-right: 20px;
 }
 
-.section--figure__image {
+.section__figure__image {
   height: 300px;
   width: 250px;
 }
 
-.section--figure__description {
+.section__figure__description {
   font-style: italic;
   margin-top: 5px;
 }
@@ -398,11 +398,11 @@
   .main {
     margin: 0 40px;
   }
-  .section--text {
+  .section__text {
     margin-left: 5px;
     width: 60%;
   }
-  .section--figure {
+  .section__figure {
     width: 40%;
     margin-right: 0;
   }
@@ -421,13 +421,13 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .section--text {
+  .section__text {
     width: 100%;
   }
-  .section--text__header {
+  .section__text--main-header, .section__text--sidebar-header {
     text-align: center;
   }
-  .section--figure {
+  .section__figure {
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
