@@ -13,9 +13,9 @@ const slideList = [{
 ];
 
 const header = document.querySelector(".header");
-const headerButton = document.querySelector(".header--button");
+const headerButton = document.querySelector(".header__button");
 const dots = [...document.querySelectorAll(".dot")];
-const arrows = document.querySelectorAll(".header--arrow");
+const arrows = document.querySelectorAll(".header__arrow");
 
 let active = 0;
 
