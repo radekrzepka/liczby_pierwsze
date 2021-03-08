@@ -189,28 +189,17 @@
 @media(max-width: $smallLaptopWidth) {
     .header {
         @include smallLaptopWebsiteMargin;
-    }
-
-    .navigation__logo {
-        width: 150px;
-        height: 25px;
-    }
-
-    .header__arrow--left {
-        right: 95%;
-    }
-    
-    .header__arrow--right {
-        left: 95%;
-    }
-}
-
-@media(max-width: $tabletWidth) {
-    .header {
-        @include noMargin;
 
         &__hamburger-icon {
             display: block;
+        }
+
+        &__arrow--left {
+            right: 95%;
+        }
+        
+        &__arrow--right {
+            left: 95%;
         }
     }
 
@@ -240,16 +229,32 @@
         }
 
         &__logo {
-            width: 200px;
-            height: 30px;
+            width: 150px;
+            height: 25px;
             margin-left: 20px;
-            margin-right: 150px;
+            margin-right: 100px;
 
             &.open {
                 display: none;
             }
         }
     }
+}
+
+@media(max-width: $tabletWidth) {
+    .header {
+        @include noMargin;
+
+        &__arrow--left {
+            right: 93%;
+        }
+
+        &__arrow--right {
+            left: 93%;
+        }
+    }
+
+    
 }
 
 @media(max-width: $largePhoneWidth) {
@@ -264,7 +269,42 @@
     }
 
     .header__button {
-        padding: 10px 30px;
+        padding: 10px 20px;
+    }
+
+    .header__hamburger-icon {
+        span {
+            height: 5px;
+
+            &:nth-child(1) {
+                top: 0px;
+            }
+
+            &:nth-child(2) {
+                top: 15px;
+            }
+
+            &:nth-child(3) {
+                top: 30px;
+            }
+        }
+
+        &.open {
+            span {
+                &:nth-child(1) {
+                    top: 18px;
+                    transform: rotate(135deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                    left: -60px;
+                }
+                &:nth-child(3) {
+                    top: 18px;
+                    transform: rotate(-135deg);
+                }
+            }
+        }
     }
 }
 
@@ -277,12 +317,16 @@
 
 @media(max-width: $smallPhoneWidth) {
     .header__hamburger-icon {
-        right: 25px;
+        right: 28px;
         top: 45px;
     }
 
     .navigation {
         height: 80px;
         width: 90%;
+    }
+
+    .header__button {
+        padding: 10px 15px;
     }
 }
