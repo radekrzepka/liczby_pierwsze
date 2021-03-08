@@ -33,6 +33,7 @@
 .header--dots {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  margin-bottom: 10px;
 }
 
 .header .dot {
