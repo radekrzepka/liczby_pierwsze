@@ -36,19 +36,16 @@
                     <a href="#rodzaje" class="navigation__list__item--link">Rodzaje</a>
                 </li>
                 <li class="navigation__list__item">
-                    <a href="#" class="navigation__list__item--link">Poszukiwania</a>
+                    <a href="#" class="navigation__list__item--link">Algorytmy</a>
                 </li>
                 <li class="navigation__list__item">
-                    <a href="#" class="navigation__list__item--link">temat 4</a>
+                    <a href="#" class="navigation__list__item--link">Zastoswania</a>
                 </li>
                 <li class="navigation__list__item">
-                    <a href="#" class="navigation__list__item--link">temat 5</a>
+                    <a href="#" class="navigation__list__item--link">O stronie</a>
                 </li>
                 <li class="navigation__list__item">
-                    <a href="#" class="navigation__list__item--link">Zastoswanie</a>
-                </li>
-                <li class="navigation__list__item">
-                    <a href="#" class="navigation__list__item--link navigation__list__item--link--green">Rozpocznij!</a>
+                    <a href="#definicja" class="navigation__list__item--link navigation__list__item--link--green">Rozpocznij!</a>
                 </li>
             </ul>
             <div class="header__hamburger-icon">
@@ -57,7 +54,7 @@
                 <span></span>
             </div>
         </nav>
-        <button class="header__button">W poszukiwaniu liczb pierwszych</button>
+        <a class="header__button" href="#rodzaje">Rodzaje liczb pierwszych</a>
         <div class="header--dots">
             <span class="dot active"></span>
             <span class="dot"></span>
@@ -121,8 +118,16 @@
                 <p class="section__text--paragraph">W XVII wieku francuski mnich Marin Mersenne rozpatrzył możliwośc istnienia liczby pierwszych w postaci <span class="section__text--math">2<sup>n</sup>-1</span></p>
     
                 <p class="section__text--paragraph">Stwierdził, że <span class="section__text--math">2<sup>n</sup>-1</span> jest liczbą pierwszą dla <span class="section__text--math">n = 2,3,5,7,13,17,19,31,67,127,257 </span> i nie jest nią dla żadnej inne wartości n mniejszej od 257. Dziś jednak wiemy, że francuz pominął <span class="section__text--math">n = 61,89,107</span> i błędnie określił jako liczby pierwsze liczby dla <span class="section__text--math">n = 67,257</span>.</p>
+
+                <p class="section__text--paragraph">Liczby Mersenne'a charakteryzują się również tym, że liczby te w zapisie binarnym złożone są z samych jedynek co ułatwia komputerom sprawdzenie ich pierwszośći i przez to często największą znaną liczbą pierwszą jest właśnie liczba Mersenne'a</p>
+
+                <p class="section__text--paragraph">Aktualnie poszukiwaniem liczb pierwsych Mersenne'a zajmuje się <a href="https://www.mersenne.org" target="_blank"> GIMPS(Great Internet Mersenne Prime Search)</a>. Projekt wykorzystuje obliczenia rozproszone, dzięki czemu każdy użytkownik może udostępnić moc obliczeniową swojego komputera, aby dołożyć swoją cegiełkę do poszukiwania kolejny liczb pierwszych.</p>
     
                 <p class="section__text--paragraph">Aktualnie nie wiadomo czy liczb pierwszych Mersenne'a jest nieskończenie wiele. Na dziś znamy 51. Aby wyświetlić tabele liczb pierwszych Mersenne'a wpisz poniżej ile liczb wyświetlić.</p>
+
+                <p class="section__text--paragraph">Pierwszość liczb Mersenne’a sprawdza się za pomocą testu <strong>Lucasa-Lehmera</strong> <u>tutaj będzie odnośnik do wytłumaczenia algorytmu w sekcji "algorytmy liczb pierwszych"</u></p>
+
+                <p class="section__text--paragraph">Liczby pierwsze Mersenne’a są bezpośrednio związanie z odnajdywaniem kolejnych <a href="https://pl.wikipedia.org/wiki/Liczba_doskonała">liczb doskonołych</a> ponieważ występują we wzorze, który je generuje: <span class="section__text--math">2<sup>n-1</sup>*(2<sup>n</sup>-1)</span> , gdzie wyrażenie <span class="section__text--math"> 2<sup>n</sup> - 1 </span>to liczba pierwsza Mersenne’a, dzięki czemu przy odkryciu kolejnej największej liczb pierwszej Mersenne’a odkrywana jest również największa liczba doskonała, którą aktualnie jest liczba:<span class="section__text--math"> 2<sup>82589932</sup>*(2<sup>82589933</sup> - 1)</span>, której rozwinięcie dziesiętne liczy aż 24 862 048 cyfr.</p>
     
                 <input type="number" class="section__text--input mersenne-primes-input" min="1" max="51"> <br>
                 <button type="button" class="section__text--button mersenne-primes-button">Pokaż tabele</button>

@@ -28,6 +28,7 @@
   border-radius: 57px;
   font-weight: bold;
   font-size: 22px;
+  text-decoration: none;
 }
 
 .header--dots {
@@ -353,7 +354,7 @@
 }
 
 .section__text > * {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .section__text--paragraph {
@@ -497,6 +498,12 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .table--delete-mobile {
+    display: none;
   }
 }
 

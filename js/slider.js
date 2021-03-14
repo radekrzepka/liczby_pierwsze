@@ -1,15 +1,18 @@
 const slider = () => {
     const slideList = [{
             img: "./images/slider/slider-img1.jpg",
-            text: "W poszukiwaniu liczb pierwszych"
+            text: "Rodzaje liczb pierwszych",
+            href: "#rodzaje"
         },
         {
             img: "./images/slider/slider-img2.jpg",
-            text: "Algorytmy liczb pierwszych"
+            text: "Algorytmy liczb pierwszych",
+            href: "#"
         },
         {
             img: "./images/slider/slider-img3.jpg",
-            text: "O stronie"
+            text: "O stronie",
+            href: "#"
         }
     ];
 
@@ -23,6 +26,7 @@ const slider = () => {
     const changeContent = () => {
         header.style.backgroundImage = `url(${slideList[active].img})`;
         headerButton.textContent = slideList[active].text;
+        headerButton.href = slideList[active].href;
 
         const activeDot = dots.findIndex(dot => dot.classList.contains("active"));
         dots[activeDot].classList.remove("active");
