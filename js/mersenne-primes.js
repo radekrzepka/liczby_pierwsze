@@ -23,12 +23,12 @@ const mersennePrimes = () => {
     
         const discoverers = ["", "", "", "", "nieznany", "Pietro Cataldi", "Pietro Cataldi", "Leonhard Euler", "Iwan Perwuszin", "Ralph Ernest Powers", "Ralph Ernest Powers", "Édouard Lucas", "Raphael Mitchel Robinson", "Raphael Mitchel Robinson", "Raphael Mitchel Robinson", "Raphael Mitchel Robinson", "Raphael Mitchel Robinson", "Hans Riesel", "Alexander Hurwitz", "Alexander Hurwitz", "Donald Bruce Gillies", "Donald Bruce Gillies", "Donald Bruce Gillies", "Bryant Tuckerman", "Landon Curt Noll i Laura Nickel", "Landon Curt Noll", "Harry Lewis Nelson i David Slowinski", "David Slowinski", "Walt Colquitt i Luke Welsh", "David Slowinski", "David Slowinski", "David Slowinski i Paul Gage", "David Slowinski i Paul Gage", "David Slowinski i Paul Gage", "GIMPS / Joel Armengaud", "GIMPS / Gordon Spence", "GIMPS / Roland Clarkson", "GIMPS / Nayan Hajratwala", "GIMPS / Michael Cameron", "GIMPS / Michael Shafer", "GIMPS / Josh Findley", "GIMPS / Martin Nowak", "GIMPS / Curtis Cooper i Steven Boone", "GIMPS / Curtis Cooper i Steven Boone", "GIMPS / Hans-Michael Elvenich", "GIMPS / Odd Magnar Strindmo", "GIMPS / Edson Smith", "GIMPS / Curtis Cooper", "GIMPS / Curtis Cooper", "GIMPS / Jonathan Pace", "GIMPS / Patrick Laroche"];
     
-        if (number <= 0) alert("Podaj dodatnią liczbę");
+        if (number <= 0) alert("Podaj dodatnią liczbę większą od 0");
         else if (number > 51) alert("Na dziś nie ma aż tyle liczb pierwszych Mersenne'a 😃");
         else {
             const table = document.createElement("table");
             table.classList.add("section__text--table");
-            const tableHeader = "<tr><th>Lp.</th><th>n</th><th>M<sub>n</sub></th><th>Ilość cyfr w M<sub>n</sub></th><th class='table--delete-mobile'>Data odkrycia</th><th class='table--delete-mobile'>Odkrywca</th></tr>";
+            const tableHeader = "<tr><th>Lp.</th><th>n</th><th>M<sub>n</sub></th><th>Ilość cyfr w M<sub>n</sub></th><th class='table--delete-mobile'>Data odkrycia</th><th class='table--delete-mobile'>Odkrywca</th><th class='table--delete-mobile'>Liczba doskonała</th></tr>";
             table.innerHTML = tableHeader;
     
             for (let i = 0; i < number; i++) {
@@ -38,12 +38,13 @@ const mersennePrimes = () => {
                                       <td>2<sup>${powersArray[i]}</sup>-1</td>
                                       <td>${numberOfDigits[i]}</td>
                                       <td class='table--delete-mobile'>${dateOfFind[i]}</td>
-                                      <td class='table--delete-mobile'>${discoverers[i]}</td>`;
+                                      <td class='table--delete-mobile'>${discoverers[i]}</td>
+                                      <td class='table--delete-mobile'>2<sup>${powersArray[i]-1}</sup> * (2<sup>${powersArray[i]}</sup> - 1)`;
                 newRow.innerHTML += tableContent;
             }
             div.appendChild(table);
     
-            if (number == 51) {
+            if (number > 47 && number < 52) {
                 const pInfo = document.createElement("p");
                 pInfo.classList.add("section__text--paragraph");
                 pInfo.classList.add("mersenne-paragraph-info");
