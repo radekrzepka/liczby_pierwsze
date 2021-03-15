@@ -361,6 +361,7 @@
   width: 100%;
   border: 1px solid #000;
   background-color: #f9f9f9;
+  overflow: auto;
 }
 
 .section__text--code li {

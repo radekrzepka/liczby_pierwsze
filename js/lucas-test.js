@@ -11,7 +11,6 @@ button.addEventListener("click", () => {
     }
 
     if (nMersenneNumber <= 0) alert("Podaj dodatnią liczbę większą od 0");
-    // else if(nMersenneNumber > 100) alert("Za duża liczba"); //FIXME: Czy zrobić ogaraniczenie czy nie o to jest pytanie 
     else {
         const number = BigInt((2n ** nMersenneNumber) - 1n);
         let s = BigInt(4);
@@ -21,18 +20,20 @@ button.addEventListener("click", () => {
         newDiv.classList.add("lucas-test-code-div");
         newDiv.classList.add("section__text--code");
 
-        const list = document.createElement("ul");
+        if(nMersenneNumber<70) list = document.createElement("ul");
 
         if(nMersenneNumber == 2 ) s = 0;
         else {
             for (let i = 0n; i < nMersenneNumber - 2n; i++) {
-                const listElement = document.createElement("li");
-                listElement.textContent = (`s <- (${s} * ${s} - 2) % ${number} = ${((s * s) - 2n) % number}`);
-                list.appendChild(listElement);
+                if(nMersenneNumber<70) {
+                    const listElement = document.createElement("li");
+                    listElement.textContent = (`s <- (${s} * ${s} - 2) % ${number} = ${((s * s) - 2n) % number}`);
+                    list.appendChild(listElement);
+                }
                 s = ((s * s) - BigInt(2)) % number;
             }
         }
-        newDiv.appendChild(list);
+        if(nMersenneNumber<70) newDiv.appendChild(list);
 
         const timeEnd = new Date().getTime();
 
