@@ -15,7 +15,7 @@ button.addEventListener("click", () => {
     else {
         const number = BigInt((2n ** nMersenneNumber) - 1n);
         let s = BigInt(4);
-        const timeStart = Date.now();
+        const timeStart = new Date().getTime();
 
         const newDiv = document.createElement("div");
         newDiv.classList.add("lucas-test-code-div");
@@ -34,7 +34,7 @@ button.addEventListener("click", () => {
         }
         newDiv.appendChild(list);
 
-        const timeEnd = Date.now();
+        const timeEnd = new Date().getTime();
 
         newDiv.innerHTML += `Liczba 2<sup>${nMersenneNumber}</sup> - 1 = ${number} ${s == 0? " <strong>jest pierwsza</strong>": " <strong>jest złożona</strong>"}. <br>`;
         newDiv.innerHTML += `Czas wykonania algorytmu: ${timeEnd-timeStart} ms`;
