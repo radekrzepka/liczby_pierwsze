@@ -17,6 +17,16 @@
             margin-bottom: 15px;
         }
 
+        &--code {
+            width: 100%;
+            border: 1px solid $black;
+            background-color: #f9f9f9;
+
+            li {
+                margin-left: 20px;
+            }
+        }
+
         &--paragraph {
             line-height: 1.6;
             font-size: 16px;

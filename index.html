@@ -22,6 +22,7 @@
     <script src="./js/hamburger-menu.js" defer></script>
     <script src="./js/arrow.js" defer></script>
     <script src="./js/mersenne-primes.js" defer></script>
+    <script src="./js/lucas-test.js" defer></script>
 </head>
 
 <body>
@@ -36,7 +37,7 @@
                     <a href="#rodzaje" class="navigation__list__item--link">Rodzaje</a>
                 </li>
                 <li class="navigation__list__item">
-                    <a href="#" class="navigation__list__item--link">Algorytmy</a>
+                    <a href="#algorytmy" class="navigation__list__item--link">Algorytmy</a>
                 </li>
                 <li class="navigation__list__item">
                     <a href="#" class="navigation__list__item--link">Zastoswania</a>
@@ -123,11 +124,11 @@
 
                 <p class="section__text--paragraph">Aktualnie poszukiwaniem liczb pierwszych Mersenne'a zajmuje się <a href="https://www.mersenne.org" target="_blank"> GIMPS(Great Internet Mersenne Prime Search)</a>. Projekt wykorzystuje obliczenia rozproszone, dzięki czemu każdy użytkownik może udostępnić moc obliczeniową swojego komputera, aby dołożyć swoją cegiełkę do poszukiwania kolejny liczb pierwszych.</p>
     
-                <p class="section__text--paragraph">Aktualnie nie wiadomo czy liczb pierwszych Mersenne'a jest nieskończenie wiele. Na dziś znamy 51. Aby wyświetlić tabele liczb pierwszych Mersenne'a wpisz poniżej ile liczb wyświetlić.</p>
-
-                <p class="section__text--paragraph">Pierwszość liczb Mersenne’a sprawdza się za pomocą testu <strong>Lucasa-Lehmera</strong> <u>tutaj będzie odnośnik do wytłumaczenia algorytmu w sekcji "algorytmy liczb pierwszych"</u></p>
+                <p class="section__text--paragraph">Pierwszość liczb Mersenne’a sprawdza się za pomocą testu <a href="#lucas-test">Lucasa-Lehmera</a>.</p>
 
                 <p class="section__text--paragraph">Liczby pierwsze Mersenne’a są bezpośrednio związanie z odnajdywaniem kolejnych <a href="https://pl.wikipedia.org/wiki/Liczba_doskonała" target="_blank">liczb doskonałych</a> ponieważ występują we wzorze, który je generuje: <span class="section__text--math">2<sup>n-1</sup>*(2<sup>n</sup>-1)</span> , gdzie wyrażenie <span class="section__text--math"> 2<sup>n</sup> - 1 </span>to liczba pierwsza Mersenne’a, dzięki czemu przy odkryciu kolejnej największej liczb pierwszej Mersenne’a odkrywana jest również największa liczba doskonała, którą aktualnie jest liczba:<span class="section__text--math"> 2<sup>82589932</sup>*(2<sup>82589933</sup> - 1)</span>, której rozwinięcie dziesiętne liczy aż 24 862 048 cyfr.</p>
+
+                <p class="section__text--paragraph">Aktualnie nie wiadomo czy liczb pierwszych Mersenne'a jest nieskończenie wiele. Na dziś znamy 51. Aby wyświetlić tabele liczb pierwszych Mersenne'a wpisz poniżej ile liczb wyświetlić.</p>
     
                 <input type="number" class="section__text--input mersenne-primes-input" min="1" max="51"> <br>
                 <button type="button" class="section__text--button mersenne-primes-button">Pokaż tabele</button>
@@ -135,6 +136,40 @@
             <figure class="section__figure">
                 <img src="./images/Marin Mersenne.jpeg" alt="Zdjęcie Marina Mersenne'a" class="section__figure__image">
                 <figcaption class="section__figure__description">Marin Mersenne</figcaption>
+            </figure>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h3 class="section__text--sidebar-header">Dodać inne rodzaje liczb pierwszych</h3>
+
+                <p class="section__text--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptatem debitis quo earum sed nemo, consequuntur vero obcaecati aut facere eveniet, laborum ullam doloribus rerum animi quis! Nisi qui ipsa repudiandae veniam. Minima accusamus beatae odio hic est officia, id itaque explicabo nesciunt tempore neque illo, quis nobis voluptatibus? Similique!</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h2 class="section__text--main-header" id="algorytmy">Algorytmy liczb pierwszych</h2>
+                <p class="section__text--paragraph">Napisać coś o algorytmach</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__text lucas-test-div">
+                <h3 class="section__text--sidebar-header" id="lucas-test">Test Lucasa-Lehmera</h3>
+
+                <p class="section__text--paragraph">Test Lucasa-Lehmera jest testem pierwszości dla liczb Mersenne'a. Test ten został ułożony przez Edwarda Lucasa w 1856, a następnie ulepszony przez niego w 1878. W 1930 test został zmodyfikowany przez Derricka Henry’ego Lehmera. Ten właśnie test jest wykrozystywany przez serwis GIMPS do znajdowania dużych liczb pierwszych Mersenne’a</p>
+
+                <p class="section__text--paragraph">Poniżej można sprawdzić działanie testu Lucasa-Lehmera. Poniżej można wprowadzić liczbę n, która będzie n-tą liczbą Mersenne’a i sprawdzić działanie testu oraz czy ta liczba jest pierwsza.</p>
+
+                <p class="section__text--paragraph"><i>(Rekomendowane jest wykonywanie testu dla n &lt 100, ponieważ przy większych wartościach wykonany algorytm staje się mało czytelny)</i></p>
+
+                <input type="number" class="section__text--input lucas-test-input" min="1" max="100"> <br>
+                <button type="button" class="section__text--button lucas-test-button">Sprawdź</button>
+            </div>
+            <figure class="section__figure">
+                <img src="./images/Edward Lucas.jpg" alt="Zdjęcie Edwarda Lucasa" class="section__figure__image">
+                <figcaption class="section__figure__description">Edward Lucas</figcaption>
             </figure>
         </section>
     <img src="./images/icons/arrow-side.svg" class="arrow-image closed">  

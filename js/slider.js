@@ -7,7 +7,7 @@ const slider = () => {
         {
             img: "./images/slider/slider-img2.jpg",
             text: "Algorytmy liczb pierwszych",
-            href: "#"
+            href: "#algorytmy"
         },
         {
             img: "./images/slider/slider-img3.jpg",
