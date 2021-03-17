@@ -28,7 +28,7 @@
 <body>
     <header class="header">
         <nav class="navigation" id="navigation">
-            <img src="./images/logo.png" alt="Logo strony" class="navigation__logo">
+            <img src="./images/logo.svg" alt="Logo strony" class="navigation__logo">
             <ul class="navigation__list">
                 <li class="navigation__list__item">
                     <a href="#definicja" class="navigation__list__item--link">Definicja</a>
@@ -175,6 +175,30 @@
             <figure class="section__figure">
                 <img src="./images/Edward Lucas.jpg" alt="Zdjęcie Edwarda Lucasa" class="section__figure__image">
                 <figcaption class="section__figure__description">Edward Lucas</figcaption>
+            </figure>
+        </section>
+        
+        <section class="section">
+            <div class="section__text">
+                <h3 class="section__text--sidebar-header">Sito Eratostenesa</h3>
+
+                <p class="section__text--paragraph">Sito Eratostenesa jest to algorotym przypisywany Eratostenesowi z Cyreny służący do wyznaczania liczb pierwszych z zadanego przedziału <span class="section__text--math"> [2;n]</span></p>
+
+                <p class="section__text--paragraph">Działanie sita polega na wybraniu ze zbioru <span class="section__text--math"> [2;n]</span> najmniejszej liczby czyli 2 i wykreśelniu wszystkich jej wielokrotności większej od niej, czyli <span class="section__text--math">4,6,8,10,....</span></p>
+
+                <p class="section__text--paragraph">Z pozostatałych liczb wybieramy kolejną najmniejszą nie wykreśloną czyli 3 i ponownie wykreślamy wszystkie jej wielokrotności czyli: <span class="section__text--math">6,9,12,15,....</span>. Niektóre liczby takie jak 6 lub 12 będą skreślone jeszcze raz czym się nie przejmujemy.</p>
+
+                <p class="section__text--paragraph">Tak samo robimy z kolejną najmniejszą niewykreśloną liczbą czyli 5.</p>
+
+                <p class="section__text--paragraph">Proces powtarzamy tak długo, gdy liczba <span class="section__text--math">i</span>, której wielokrotności chcemy wykreślać jest większa od <span class="section__text--math"> &#8730;n</span></p>
+
+                <p class="section__text--paragraph">Dla danej liczby <span class="section__text--math">n</span> wszystkie wykreślonej liczby mniejsze lub równe <span class="section__text--math">n</span> są liczbami pierwszymi.</p>
+
+                <img src="./images/sito eratostenesa.gif" alt="Przedstawienie działania sita Eratostenesa" class="section__text--image">
+            </div>
+            <figure class="section__figure">
+                <img src="./images/Eratostenes.png" alt="Zdjęcie Eratostenesa" class="section__figure__image">
+                <figcaption class="section__figure__description">Eratostenes</figcaption>
             </figure>
         </section>
     <img src="./images/icons/arrow-side.svg" class="arrow-image closed">  
