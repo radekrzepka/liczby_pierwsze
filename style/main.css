@@ -378,6 +378,7 @@
 .section__text--math {
   font-weight: bold;
   font-family: serif;
+  font-size: 20px;
 }
 
 .section__text--main-header {
@@ -555,6 +556,7 @@ body {
           justify-content: center;
   font-family: "Roboto Slab", serif;
   background-color: #FCFCFC;
+  font-size: 16px;
 }
 
 .arrow-image {
