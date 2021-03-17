@@ -12,7 +12,7 @@ const slider = () => {
         {
             img: "./images/slider/slider-img3.jpg",
             text: "Ciekawostki",
-            href: "#"
+            href: "#ciekawostki"
         }
     ];
 
