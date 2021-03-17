@@ -23,6 +23,7 @@
     <script src="./js/arrow.js" defer></script>
     <script src="./js/mersenne-primes.js" defer></script>
     <script src="./js/lucas-test.js" defer></script>
+    <script src="./js/sticky-nav.js" defer></script>
 </head>
 
 <body>
@@ -34,20 +35,20 @@
                     <a href="#definicja" class="navigation__list__item--link">Definicja</a>
                 </li>
                 <li class="navigation__list__item">
+                    <a href="#" class="navigation__list__item--link">Rozmieszczenie</a>
+                </li>
+                <li class="navigation__list__item">
                     <a href="#rodzaje" class="navigation__list__item--link">Rodzaje</a>
                 </li>
                 <li class="navigation__list__item">
                     <a href="#algorytmy" class="navigation__list__item--link">Algorytmy</a>
                 </li>
                 <li class="navigation__list__item">
-                    <a href="#" class="navigation__list__item--link">Zastoswania</a>
+                    <a href="#" class="navigation__list__item--link">Zastosowania</a>
                 </li>
                 <li class="navigation__list__item">
-                    <a href="#" class="navigation__list__item--link">O stronie</a>
-                </li>
-                <li class="navigation__list__item">
-                    <a href="#definicja" class="navigation__list__item--link navigation__list__item--link--green">Rozpocznij!</a>
-                </li>
+                    <a href="#" class="navigation__list__item--link">Ciekawostki</a>
+                </li> 
             </ul>
             <div class="header__hamburger-icon">
                 <span></span>
@@ -108,21 +109,20 @@
         <section class="section">
             <div class="section__text">
                 <h2 class="section__text--main-header" id="rodzaje">Rodzaje liczb pierwszych</h2>
-
-                <p class="section__text--paragraph"><u>Znamy bardzo wiele rodzajów liczb pierwszych...(dokończyć)</u></p>
             </div>
         </section>
+
         <section class="section">
             <div class="section__text mersenne-primes-div">
                 <h3 class="section__text--sidebar-header">Liczby pierwsze Mersenne'a</h3>
 
                 <p class="section__text--paragraph">W XVII wieku francuski mnich Marin Mersenne rozpatrzył możliwość istnienia liczby pierwszych w postaci <span class="section__text--math">2<sup>n</sup>-1</span></p>
     
-                <p class="section__text--paragraph">Stwierdził, że <span class="section__text--math">2<sup>n</sup>-1</span> jest liczbą pierwszą dla <span class="section__text--math">n = 2,3,5,7,13,17,19,31,67,127,257 </span> i nie jest nią dla żadnej inne wartości <span class="section__text--math">n</span> mniejszej od 257. Dziś jednak wiemy, że francuz pominął <span class="section__text--math">n = 61,89,107</span> i błędnie określił jako liczby pierwsze liczby dla <span class="section__text--math">n = 67,257</span>.</p>
+                <p class="section__text--paragraph">Stwierdził bez dowodu, że <span class="section__text--math">2<sup>n</sup>-1</span> jest liczbą pierwszą dla <span class="section__text--math">n = 2,3,5,7,13,17,19,31,67,127,257 </span> i nie jest nią dla żadnej inne wartości <span class="section__text--math">n</span> mniejszej od 257. Dziś jednak wiemy, że francuz pominął <span class="section__text--math">n = 61,89,107</span> i błędnie określił jako liczby pierwsze liczby dla <span class="section__text--math">n = 67,257</span>.</p>
 
                 <p class="section__text--paragraph">Liczby Mersenne'a charakteryzują się również tym, że liczby te w zapisie binarnym złożone są z samych jedynek co ułatwia komputerom sprawdzenie ich pierwszośći i przez to często największą znaną liczbą pierwszą jest właśnie liczba Mersenne'a</p>
 
-                <p class="section__text--paragraph">Aktualnie poszukiwaniem liczb pierwszych Mersenne'a zajmuje się <a href="https://www.mersenne.org" target="_blank"> GIMPS(Great Internet Mersenne Prime Search)</a>. Projekt wykorzystuje obliczenia rozproszone, dzięki czemu każdy użytkownik może udostępnić moc obliczeniową swojego komputera, aby dołożyć swoją cegiełkę do poszukiwania kolejny liczb pierwszych.</p>
+                <p class="section__text--paragraph">To właśnie wśród liczb Mersenne'a Aktualnie poszukiwaniem liczb pierwszych Mersenne'a zajmuje się <a href="https://www.mersenne.org" target="_blank"> GIMPS(Great Internet Mersenne Prime Search)</a>. Projekt wykorzystuje obliczenia rozproszone, dzięki czemu każdy użytkownik może udostępnić moc obliczeniową swojego komputera, aby dołożyć swoją cegiełkę do poszukiwania kolejny liczb pierwszych.</p>
     
                 <p class="section__text--paragraph">Pierwszość liczb Mersenne’a sprawdza się za pomocą testu <a href="#lucas-test">Lucasa-Lehmera</a>.</p>
 
@@ -151,38 +151,14 @@
         <section class="section">
             <div class="section__text">
                 <h2 class="section__text--main-header" id="algorytmy">Algorytmy liczb pierwszych</h2>
-
-                <p class="section__text--paragraph"><u>Napisać coś o algorytmach</u></p>
             </div>
         </section>
 
-        <section class="section">
-            <div class="section__text lucas-test-div">
-                <h3 class="section__text--sidebar-header" id="lucas-test">Test Lucasa-Lehmera</h3>
-
-                <p class="section__text--paragraph">Test Lucasa-Lehmera jest testem pierwszości dla liczb Mersenne'a. Test ten został ułożony przez Edwarda Lucasa w 1856, a następnie ulepszony przez niego w 1878. W 1930 test został zmodyfikowany przez Derricka Henry’ego Lehmera. Ten właśnie test jest wykrozystywany przez serwis GIMPS do znajdowania dużych liczb pierwszych Mersenne’a</p>
-
-                <p class="section__text--paragraph"><u>Opisać działanie algotytmu</u></p>
-
-                <p class="section__text--paragraph">Poniżej można sprawdzić działanie testu Lucasa-Lehmera. Poniżej można wprowadzić liczbę n, która będzie n-tą liczbą Mersenne’a i sprawdzić działanie testu oraz czy ta liczba jest pierwsza.</p>
-
-                <p class="section__text--paragraph"><i>(Dla n &lt; 70, wyświetlany jest cały algorytm, a w przypadku n &ge; 70 wyświetlany jest tylko wynik działania algorytmu oraz czas jego działania)</i></p>
-
-                <input type="number" class="section__text--input lucas-test-input" min="1" max="100"> <br>
-                
-                <button type="button" class="section__text--button lucas-test-button">Sprawdź</button>
-            </div>
-            <figure class="section__figure">
-                <img src="./images/Edward Lucas.jpg" alt="Zdjęcie Edwarda Lucasa" class="section__figure__image">
-                <figcaption class="section__figure__description">Edward Lucas</figcaption>
-            </figure>
-        </section>
-        
         <section class="section">
             <div class="section__text">
                 <h3 class="section__text--sidebar-header">Sito Eratostenesa</h3>
 
-                <p class="section__text--paragraph">Sito Eratostenesa jest to algorotym przypisywany Eratostenesowi z Cyreny służący do wyznaczania liczb pierwszych z zadanego przedziału <span class="section__text--math"> [2;n]</span></p>
+                <p class="section__text--paragraph">Sito Eratostenesa jest to algorotym przypisywany Eratostenesowi z Cyreny wymyślony już w III w. p.n.e służący do wyznaczania liczb pierwszych z zadanego przedziału <span class="section__text--math"> [2;n]</span></p>
 
                 <p class="section__text--paragraph">Działanie sita polega na wybraniu ze zbioru <span class="section__text--math"> [2;n]</span> najmniejszej liczby czyli 2 i wykreśelniu wszystkich jej wielokrotności większej od niej, czyli <span class="section__text--math">4,6,8,10,....</span></p>
 
@@ -201,8 +177,50 @@
                 <figcaption class="section__figure__description">Eratostenes</figcaption>
             </figure>
         </section>
+
+        <section class="section">
+            <div class="section__text lucas-test-div">
+                <h3 class="section__text--sidebar-header" id="lucas-test">Test Lucasa-Lehmera</h3>
+
+                <p class="section__text--paragraph">Test Lucasa-Lehmera jest testem pierwszości dla liczb Mersenne'a. Test ten został ułożony przez Edwarda Lucasa w 1856, a następnie ulepszony przez niego w 1878. Podany wniosek stwierdzał, że liczba <span class="section__text--math">2<sup>p</sup>-1</span> jest liczbą pierwszą wtedy gdy jest dzielnikiem liczby wyrazu <span class="section__text--math">L<sub>p-1</sub></span> ciągu określonego następująco:</p>
+
+                <p class="section__text--math">L<sub>1</sub>=4</p>
+
+                <p class="section__text--math">L<sub>n</sub>= L<sub>n-1</sub><sup>2</sup>-2</p>  
+
+                <p class="section__text--paragraph">Nie wiadomo, jak Lucas wymyślił tę własność i że nie potrafił jej formalnie udowodnić.</p>
+                    
+                <p class="section__text--paragraph"> Warunek podany przez Lucasa został udowodniony dopiero dopiero w XX wieku przez Amerykanina Derricka Henry'ego Lehmera i od tego czasu nosił nazwą <strong>testu Lucasa-Lehmera</strong>.</p>
+                    
+                <p class="section__text--paragraph">Ten właśnie test jest wykrozystywany przez serwis GIMPS do znajdowania dużych liczb pierwszych Mersenne’a</p>
+                   
+                <p class="section__text--paragraph">Zaletą tego algorytmu są takie, że działa bardzo szybko i dla przykłady liczbę <span class="section__text--math">2<sup>89</sup>-1</span> posiadającą 27 cyfr potrafi określić jako liczbę pierwszą w ciągu 1ms! </p>
+
+                <p class="section__text--paragraph">Jego wadą jest jednak, że uzywać można go tylko dla liczb Mersenne’a.</p>
+
+                <p class="section__text--paragraph">Poniżej można sprawdzić działanie testu Lucasa-Lehmera. Poniżej można wprowadzić liczbę n, która będzie n-tą liczbą Mersenne’a i sprawdzić działanie testu oraz czy ta liczba jest pierwsza.</p>
+
+                <p class="section__text--paragraph"><i>(Dla n &lt; 70, wyświetlany jest cały algorytm, a w przypadku n &ge; 70 wyświetlany jest tylko wynik działania algorytmu oraz czas jego działania)</i></p>
+
+                <input type="number" class="section__text--input lucas-test-input" min="1" max="100"> <br>
+                
+                <button type="button" class="section__text--button lucas-test-button">Sprawdź</button>
+            </div>
+            <figure class="section__figure">
+                <img src="./images/Edward Lucas.jpg" alt="Zdjęcie Edwarda Lucasa" class="section__figure__image">
+                <figcaption class="section__figure__description">Edward Lucas</figcaption>
+
+                <img src="./images/Derrick Henry Lehmer.jpg" alt="Zdjęcie Derrick Henry'ego Lehmera" class="section__figure__image">
+                <figcaption class="section__figure__description">Derrick Henry Lehmer</figcaption>
+            </figure>
+        </section>
+
     <img src="./images/icons/arrow-side.svg" class="arrow-image closed">  
     </main>
+
+    <footer class="footer">
+        <p class="footer__paragraph">Strona przygotowana przez Radosława Rzepkę w ramach XIII edycji konkursu "Zoaczyć Matematykę" | 2021</p>
+    </footer>
     
 </body>
 

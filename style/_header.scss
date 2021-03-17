@@ -148,21 +148,7 @@
         &__item--link:active {
             text-decoration: none;
             color: $black;
-        }
-
-        &__item--link--green {
-            background-color: $green;
-            padding: 10px 20px;
-            border-radius: 26px;
-            font-weight: bold;
-
-            &:link,
-            &:visited,
-            &:hover,
-            &:active {
-                color: $white;
-            }
-        }     
+        }    
     }
 }
 
@@ -177,12 +163,6 @@
 
     .navigation__list {
         font-size: 18px;
-
-        &__item--link--green {
-            padding: 5px 15px;
-            border-radius: 26px;
-            font-weight: bold;
-        }
     }
 }
 
@@ -221,10 +201,6 @@
                 flex-direction: column;
                 justify-content: space-between;
                 margin-top: 20px;
-            }
-
-            &__item--link--green {
-                display: none;
             }
         }
 

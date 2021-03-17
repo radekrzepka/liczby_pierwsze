@@ -1,6 +1,7 @@
 @import "_vars.scss";
 @import "_header.scss";
 @import "_section.scss";
+@import "_footer.scss";
 
 * {
     box-sizing: border-box;
@@ -25,7 +26,7 @@ body {
     width: 70px;
     height: 70px;
     position: sticky;
-    bottom: 0;
+    bottom: 0px;
     left: 100%;
     cursor: pointer;
 }

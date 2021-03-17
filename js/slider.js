@@ -11,7 +11,7 @@ const slider = () => {
         },
         {
             img: "./images/slider/slider-img3.jpg",
-            text: "O stronie",
+            text: "Ciekawostki",
             href: "#"
         }
     ];
