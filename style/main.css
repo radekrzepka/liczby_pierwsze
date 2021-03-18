@@ -18,7 +18,7 @@
 
 .header__button {
   color: #fff;
-  background-color: #02a569;
+  background-color: #037e51;
   cursor: pointer;
   border: none;
   outline: none;
@@ -184,10 +184,7 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .header {
-    margin: 0 40px;
-  }
+@media (max-width: 1350px) {
   .header__hamburger-icon {
     display: block;
   }
@@ -231,8 +228,17 @@
             justify-content: space-between;
     margin-top: 20px;
   }
+  .navigation__list__item:last-child {
+    margin-bottom: 10px;
+  }
   .navigation__logo.open {
     display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    margin: 0 40px;
   }
 }
 
@@ -240,23 +246,12 @@
   .header {
     margin: 0;
   }
-  .header__arrow--left {
-    right: 93%;
-  }
-  .header__arrow--right {
-    left: 93%;
+  .header__arrow--left, .header__arrow--right {
+    display: none;
   }
 }
 
 @media (max-width: 425px) {
-  .header__arrow--left {
-    right: 88%;
-    top: 40%;
-  }
-  .header__arrow--right {
-    left: 88%;
-    top: 40%;
-  }
   .header__button {
     padding: 10px 20px;
   }
@@ -384,7 +379,7 @@
 
 .section__text__quote--author {
   margin: 5px 0 0 0;
-  color: #969696;
+  color: #747373;
   font-style: italic;
 }
 
@@ -400,7 +395,7 @@
 
 .section__text--button {
   color: #fff;
-  background-color: #02a569;
+  background-color: #037e51;
   cursor: pointer;
   border: none;
   outline: none;
@@ -416,7 +411,7 @@
 }
 
 .section__text--table tr:first-child {
-  background-color: #02a569;
+  background-color: #037e51;
   color: #fff;
 }
 
@@ -473,7 +468,7 @@
   }
   .section__figure {
     width: 40%;
-    margin-right: 0;
+    margin-right: 10px;
   }
 }
 
@@ -491,10 +486,17 @@
             flex-direction: column;
   }
   .section__text {
-    width: 100%;
+    width: 95%;
+    padding: 0 10px;
   }
   .section__text--main-header, .section__text--sidebar-header {
     text-align: center;
+  }
+  .section__text--main-header {
+    font-size: 32px;
+  }
+  .section__text--sidebar-header {
+    font-size: 26px;
   }
   .section__text--image {
     width: 90%;
@@ -515,7 +517,7 @@
 
 .footer {
   margin: 0 150px;
-  background-color: #02a569;
+  background-color: #037e51;
   color: #fff;
   padding: 7px 0;
   text-align: center;
@@ -573,6 +575,7 @@ body {
   font-family: "Roboto Slab", serif;
   background-color: #FCFCFC;
   font-size: 16px;
+  width: 100%;
 }
 
 .arrow-image {

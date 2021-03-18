@@ -1,5 +1,3 @@
-@import "_vars.scss";
-
 .main {
     @include desktopWebstieMargin;
     background-color: $greyBackground;
@@ -148,7 +146,7 @@
 
     .section__figure {
         width: 40%;
-        margin-right: 0;
+        margin-right: 10px;
     }
 
 }
@@ -164,11 +162,20 @@
         flex-direction: column; 
 
         &__text {
-            width: 100%;
+            width: 95%;
+            padding: 0 10px;
 
             &--main-header,
             &--sidebar-header {
                 text-align: center;
+            }
+
+            &--main-header {
+                font-size: 32px;
+            }
+
+            &--sidebar-header {
+                font-size: 26px;
             }
 
             &--image {

@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Liczby pierwsze</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./images/favicon/site.webmanifest">
     <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,7 +28,7 @@
 <body>
     <header class="header">
         <nav class="navigation" id="navigation">
-            <img src="./images/logo.svg" alt="Logo strony" class="navigation__logo">
+            <a href="#"><img src="./images/logo.svg" alt="Logo strony" class="navigation__logo"></a>
             <ul class="navigation__list">
                 <li class="navigation__list__item">
                     <a href="#definicja" class="navigation__list__item--link">Definicja</a>
@@ -47,6 +47,9 @@
                 </li>
                 <li class="navigation__list__item">
                     <a href="#ciekawostki" class="navigation__list__item--link">Ciekawostki</a>
+                </li> 
+                <li class="navigation__list__item">
+                    <a href="#o-stronie" class="navigation__list__item--link">O stronie</a>
                 </li> 
             </ul>
             <div class="header__hamburger-icon">
@@ -137,11 +140,11 @@
 
                 <p class="section__text--paragraph">Liczby Mersenne'a charakteryzują się również tym, że liczby te w zapisie binarnym złożone są z samych jedynek co ułatwia komputerom sprawdzenie ich pierwszośći i przez to często największą znaną liczbą pierwszą jest właśnie liczba Mersenne'a</p>
 
-                <p class="section__text--paragraph">To właśnie wśród liczb Mersenne'a Aktualnie poszukiwaniem liczb pierwszych Mersenne'a zajmuje się <a href="https://www.mersenne.org" target="_blank"> GIMPS(Great Internet Mersenne Prime Search)</a>. Projekt wykorzystuje obliczenia rozproszone, dzięki czemu każdy użytkownik może udostępnić moc obliczeniową swojego komputera, aby dołożyć swoją cegiełkę do poszukiwania kolejny liczb pierwszych.</p>
+                <p class="section__text--paragraph">To właśnie wśród liczb Mersenne'a Aktualnie poszukiwaniem liczb pierwszych Mersenne'a zajmuje się <a href="https://www.mersenne.org" target="_blank" rel="noreferrer"> GIMPS(Great Internet Mersenne Prime Search)</a>. Projekt wykorzystuje obliczenia rozproszone, dzięki czemu każdy użytkownik może udostępnić moc obliczeniową swojego komputera, aby dołożyć swoją cegiełkę do poszukiwania kolejny liczb pierwszych.</p>
     
                 <p class="section__text--paragraph">Pierwszość liczb Mersenne’a sprawdza się za pomocą testu <a href="#lucas-test">Lucasa-Lehmera</a>.</p>
 
-                <p class="section__text--paragraph">Liczby pierwsze Mersenne’a są bezpośrednio związanie z odnajdywaniem kolejnych <a href="https://pl.wikipedia.org/wiki/Liczba_doskonała" target="_blank">liczb doskonałych</a> ponieważ występują we wzorze, który je generuje: <span class="section__text--math">2<sup>n-1</sup>*(2<sup>n</sup>-1)</span> , gdzie wyrażenie <span class="section__text--math"> 2<sup>n</sup> - 1 </span>to liczba pierwsza Mersenne’a, dzięki czemu przy odkryciu kolejnej największej liczb pierwszej Mersenne’a odkrywana jest również największa liczba doskonała, którą aktualnie jest liczba:<span class="section__text--math"> 2<sup>82589932</sup>*(2<sup>82589933</sup> - 1)</span>, której rozwinięcie dziesiętne liczy aż 24 862 048 cyfr.</p>
+                <p class="section__text--paragraph">Liczby pierwsze Mersenne’a są bezpośrednio związanie z odnajdywaniem kolejnych <a href="https://pl.wikipedia.org/wiki/Liczba_doskonała" target="_blank" rel="noreferrer" >liczb doskonałych</a> ponieważ występują we wzorze, który je generuje: <span class="section__text--math">2<sup>n-1</sup>*(2<sup>n</sup>-1)</span> , gdzie wyrażenie <span class="section__text--math"> 2<sup>n</sup> - 1 </span>to liczba pierwsza Mersenne’a, dzięki czemu przy odkryciu kolejnej największej liczb pierwszej Mersenne’a odkrywana jest również największa liczba doskonała, którą aktualnie jest liczba:<span class="section__text--math"> 2<sup>82589932</sup>*(2<sup>82589933</sup> - 1)</span>, której rozwinięcie dziesiętne liczy aż 24 862 048 cyfr.</p>
 
                 <p class="section__text--paragraph">Aktualnie nie wiadomo czy liczb pierwszych Mersenne'a jest nieskończenie wiele. Na dziś znamy 51. Aby wyświetlić tabele liczb pierwszych Mersenne'a wpisz poniżej ile liczb wyświetlić.</p>
     
@@ -261,11 +264,25 @@
             </div>
         </section>
 
+        <section class="section">
+            <div class="section__text">
+                <h2 class="section__text--main-header" id="o-stronie">O stronie</h2>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h3 class="section__text--sidebar-header">Lorem ipsum</h3>
+
+                <p class="section__text--paragraph"><u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus soluta ipsa natus aperiam minima cumque enim dolorum magni? Dolore illum atque, velit excepturi expedita similique rerum ullam dicta voluptatum pariatur harum corporis adipisci accusantium repudiandae nihil ratione maiores, eveniet rem officia modi explicabo distinctio consequuntur minima! Beatae commodi voluptate minus!</u></p>
+            </div>
+        </section>
+
     <img src="./images/icons/arrow-side.svg" class="arrow-image closed">  
     </main>
 
     <footer class="footer">
-        <p class="footer__paragraph">Strona przygotowana przez Radosława Rzepkę w ramach XIII edycji konkursu "Zoaczyć Matematykę" | 2021</p>
+        <p class="footer__paragraph">Strona przygotowana przez Radosława Rzepkę w ramach XIII edycji konkursu "Zobaczyć Matematykę" | 2021</p>
     </footer>
     
 </body>

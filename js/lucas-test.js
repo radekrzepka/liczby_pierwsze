@@ -4,7 +4,8 @@ const lucasTest = () => {
     const div = document.querySelector(".lucas-test-div");
 
     button.addEventListener("click", () => {
-        const nMersenneNumber = BigInt(parseInt(input.value));
+        if(input.value === "") nMersenneNumber = 0;
+        else nMersenneNumber = BigInt(parseInt(input.value));
 
         if (document.querySelector(".lucas-test-code-div") !== null) {
             const divToDelete = document.querySelector(".lucas-test-code-div");
@@ -19,8 +20,7 @@ const lucasTest = () => {
             const timeStart = new Date().getTime();
 
             const newDiv = document.createElement("div");
-            newDiv.classList.add("lucas-test-code-div");
-            newDiv.classList.add("section__text--code");
+            newDiv.classList.add("lucas-test-code-div", "section__text--code");
 
             if (nMersenneNumber < 70) list = document.createElement("ul");
 

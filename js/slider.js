@@ -23,6 +23,8 @@ const slider = () => {
 
     let active = 0;
 
+    const time = 2000;
+
     const changeContent = () => {
         header.style.backgroundImage = `url(${slideList[active].img})`;
         headerButton.textContent = slideList[active].text;
@@ -31,27 +33,28 @@ const slider = () => {
         const activeDot = dots.findIndex(dot => dot.classList.contains("active"));
         dots[activeDot].classList.remove("active");
         dots[active].classList.add("active");
+    }
 
-        header.animate([{
-                opacity: '0.5'
-            },
-            {
-                opacity: '1'
-            }
-        ], {
-            duration: 750,
-        });
+    const changeSlide = () => {
+        active++;
+        if(active === slideList.length) active = 0;
+
+        changeContent();
     }
 
     dots.forEach((dot, index) => {
         dot.addEventListener("click", () => {
+            clearInterval(interval);
             active = index;
             changeContent();
+            interval = setInterval(changeSlide, time);
         })
     })
 
     arrows.forEach((arrow, index) => {
         arrow.addEventListener("click", () => {
+            clearInterval(interval);
+
             if (index == 1) {
                 active++;
                 if (active == slideList.length) active = 0;
@@ -60,8 +63,12 @@ const slider = () => {
                 if (active < 0) active = slideList.length - 1;
             }
             changeContent();
+            interval = setInterval(changeSlide, time);
         })
     })
+
+    let interval = setInterval(changeSlide, time);
+
 }
 
 slider();

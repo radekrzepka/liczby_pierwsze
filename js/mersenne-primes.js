@@ -12,8 +12,9 @@ const mersennePrimes = () => {
             const paragraphToDelete = document.querySelector(".mersenne-paragraph-info");
             paragraphToDelete.remove();
         }
-    
-        const number = parseInt(input.value);
+
+        if(input.value === "") number = 0;
+        else number = parseInt(input.value);
     
         const powersArray = [2, 3, 5, 7, 13, 17, 19, 31, 61, 89, 107, 127, 521, 607, 1279, 2203, 2281, 3217, 4253, 4423, 9689, 9941, 11213, 19937, 21701, 23209, 44497, 86243, 110503, 132409, 216091, 765839, 859433, 1257787, 1398269, 2976221, 3021377, 6972593, 13466917, 20996011, 24036583, 25964951, 30402457, 32582657, 37156667, 42643801, 43112609, 57885161, 74207281, 77232917, 82589933];
     
@@ -23,7 +24,7 @@ const mersennePrimes = () => {
     
         const discoverers = ["", "", "", "", "nieznany", "Pietro Cataldi", "Pietro Cataldi", "Leonhard Euler", "Iwan Perwuszin", "Ralph Ernest Powers", "Ralph Ernest Powers", "Édouard Lucas", "Raphael Mitchel Robinson", "Raphael Mitchel Robinson", "Raphael Mitchel Robinson", "Raphael Mitchel Robinson", "Raphael Mitchel Robinson", "Hans Riesel", "Alexander Hurwitz", "Alexander Hurwitz", "Donald Bruce Gillies", "Donald Bruce Gillies", "Donald Bruce Gillies", "Bryant Tuckerman", "Landon Curt Noll i Laura Nickel", "Landon Curt Noll", "Harry Lewis Nelson i David Slowinski", "David Slowinski", "Walt Colquitt i Luke Welsh", "David Slowinski", "David Slowinski", "David Slowinski i Paul Gage", "David Slowinski i Paul Gage", "David Slowinski i Paul Gage", "GIMPS / Joel Armengaud", "GIMPS / Gordon Spence", "GIMPS / Roland Clarkson", "GIMPS / Nayan Hajratwala", "GIMPS / Michael Cameron", "GIMPS / Michael Shafer", "GIMPS / Josh Findley", "GIMPS / Martin Nowak", "GIMPS / Curtis Cooper i Steven Boone", "GIMPS / Curtis Cooper i Steven Boone", "GIMPS / Hans-Michael Elvenich", "GIMPS / Odd Magnar Strindmo", "GIMPS / Edson Smith", "GIMPS / Curtis Cooper", "GIMPS / Curtis Cooper", "GIMPS / Jonathan Pace", "GIMPS / Patrick Laroche"];
     
-        if (number <= 0) alert("Podaj dodatnią liczbę większą od 0");
+        if (number <= 0 || number === NaN) alert("Podaj dodatnią liczbę większą od 0");
         else if (number > 51) alert("Na dziś nie ma aż tyle liczb pierwszych Mersenne'a 😃");
         else {
             const table = document.createElement("table");
@@ -46,8 +47,7 @@ const mersennePrimes = () => {
     
             if (number > 47 && number < 52) {
                 const pInfo = document.createElement("p");
-                pInfo.classList.add("section__text--paragraph");
-                pInfo.classList.add("mersenne-paragraph-info");
+                pInfo.classList.add("section__text--paragraph" , "mersenne-paragraph-info");
                 pInfo.innerHTML = "Numberacja od 48 do 51 jest tymczasowa, ponieważ nie wiadomo czy między liczbami M<sub>43112609</sub> i M <sub>M82589933</sub> nie ma jeszcze nieodkrytych liczb pierwszych Mersenne'a.";
                 div.appendChild(pInfo);
             }
