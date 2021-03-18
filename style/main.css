@@ -335,6 +335,14 @@
   margin-bottom: 15px;
 }
 
+.section__text--list {
+  margin-left: 50px;
+}
+
+.section__text--list li {
+  margin-bottom: 5px;
+}
+
 .section__text--code {
   width: 100%;
   border: 1px solid #000;
