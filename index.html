@@ -79,7 +79,7 @@
 
                 <p class="section__text--paragraph">Liczby, które nie są pierwsze, są złożone. Można je rozkładać na dwa lub więcej czynników pierwszych.</p>
 
-                <p class="section__text--paragraph">Wydawało by się, że coś jest nie tak bo przecież liczba jest albo pierwsza albo złożona, jednak liczbę 1 nie można zaliczyć ani do liczb pierwszych ani do złożonych o czym wspomnę później.</p>
+                <p class="section__text--paragraph">Wydawało by się, że coś jest nie tak bo przecież liczba jest albo pierwsza albo złożona, jednak liczbę 0 i 1 nie można zaliczyć ani do liczb pierwszych ani do złożonych o czym wspomnę później.</p>
 
                 <p class="section__text--paragraph">Jednak co jest takiego ciekawego w tych liczbach pierwszych, że aż tyle się o nich mówi. Już Euklides z Aleksandrii w IX księdze Elementów w wieku III p.n.e. udowodnił, że wszystkich liczb pierwszych jest nieskończenie wiele.</p>
 
@@ -148,7 +148,9 @@
 
                 <p class="section__text--paragraph">Aktualnie nie wiadomo czy liczb pierwszych Mersenne'a jest nieskończenie wiele. Na dziś znamy 51. Aby wyświetlić tabele liczb pierwszych Mersenne'a wpisz poniżej ile liczb wyświetlić.</p>
     
-                <input type="number" class="section__text--input mersenne-primes-input" min="1" max="51"> <br>
+                <label for="meresenne-input">Podaj ile liczb pierwszych Mersenne’a mam wypisać:</label>
+
+                <input type="number" class="section__text--input mersenne-primes-input" min="1" max="51" id="meresenne-input"> <br>
 
                 <button type="button" class="section__text--button mersenne-primes-button">Pokaż tabele</button>
             </div>
@@ -297,7 +299,9 @@
 
                 <p class="section__text--paragraph"><i>(Dla n &lt; 70, wyświetlany jest cały algorytm, a w przypadku n &ge; 70 wyświetlany jest tylko wynik działania algorytmu oraz czas jego działania)</i>.</p>
 
-                <input type="number" class="section__text--input lucas-test-input" min="1" max="100"> <br>
+                <label for="lucas-input">Podaj którą liczbę Mersenne’a mam sprawdzić: </label>
+
+                <input type="number" class="section__text--input lucas-test-input" min="1" max="100" id="lucas-input"> <br>
                 
                 <button type="button" class="section__text--button lucas-test-button">Sprawdź</button>
             </div>
