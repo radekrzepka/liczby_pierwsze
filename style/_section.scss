@@ -189,6 +189,10 @@
             &--image {
                 width: 90%;
             }
+
+            &--ferrier-image {
+                width: 425px;
+            }
         }
 
         &__figure {
@@ -201,5 +205,21 @@
 @media(max-width: $largePhoneWidth) {
     .table--delete-mobile {
         display: none;
+    }
+
+    .section__text--ferrier-image {
+        width: 350px;
+    }
+}
+
+@media(max-width: $mediumPhoneWidth) {
+    .section__text--ferrier-image {
+        width: 300px;
+    }
+}
+
+@media(max-width: $smallPhoneWidth) {
+    .section__text--ferrier-image {
+        width: 250px;
     }
 }

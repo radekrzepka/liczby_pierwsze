@@ -509,6 +509,9 @@
   .section__text--image {
     width: 90%;
   }
+  .section__text--ferrier-image {
+    width: 425px;
+  }
   .section__figure {
     width: 100%;
     -webkit-box-align: center;
@@ -520,6 +523,21 @@
 @media (max-width: 425px) {
   .table--delete-mobile {
     display: none;
+  }
+  .section__text--ferrier-image {
+    width: 350px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section__text--ferrier-image {
+    width: 300px;
+  }
+}
+
+@media (max-width: 320px) {
+  .section__text--ferrier-image {
+    width: 250px;
   }
 }
 
