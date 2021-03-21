@@ -144,7 +144,7 @@
     
                 <p class="section__text--paragraph">Pierwszość liczb Mersenne’a sprawdza się za pomocą testu <a href="#lucas-test">Lucasa-Lehmera</a>.</p>
 
-                <p class="section__text--paragraph">Liczby pierwsze Mersenne’a są bezpośrednio związanie z odnajdywaniem kolejnych <a href="https://pl.wikipedia.org/wiki/Liczba_doskonała" target="_blank" rel="noreferrer" >liczb doskonałych</a> ponieważ występują we wzorze, który je generuje: <span class="section__text--math">2<sup>n-1</sup>*(2<sup>n</sup>-1)</span> , gdzie wyrażenie <span class="section__text--math"> 2<sup>n</sup> - 1 </span>to liczba pierwsza Mersenne’a, dzięki czemu przy odkryciu kolejnej największej liczb pierwszej Mersenne’a odkrywana jest również największa liczba doskonała, którą aktualnie jest liczba:<span class="section__text--math"> 2<sup>82589932</sup>*(2<sup>82589933</sup> - 1)</span>, której rozwinięcie dziesiętne liczy aż 24 862 048 cyfr.</p>
+                <p class="section__text--paragraph">Liczby pierwsze Mersenne’a są bezpośrednio związanie z odnajdywaniem kolejnych <a href="https://pl.wikipedia.org/wiki/Liczba_doskonała" target="_blank" rel="noreferrer" >liczb doskonałych</a> ponieważ występują we wzorze, który je generuje: <span class="section__text--math">2<sup>n-1</sup>*(2<sup>n</sup>-1)</span> , gdzie wyrażenie <span class="section__text--math"> 2<sup>n</sup> - 1 </span>to liczba pierwsza Mersenne’a, dzięki czemu przy odkryciu kolejnej największej liczby pierwszej Mersenne’a odkrywana jest również największa liczba doskonała, którą aktualnie jest liczba:<span class="section__text--math"> 2<sup>82589932</sup>*(2<sup>82589933</sup> - 1)</span>, której rozwinięcie dziesiętne liczy aż 24 862 048 cyfr.</p>
 
                 <p class="section__text--paragraph">Aktualnie nie wiadomo czy liczb pierwszych Mersenne'a jest nieskończenie wiele. Na dziś znamy 51. Aby wyświetlić tabele liczb pierwszych Mersenne'a wpisz poniżej ile liczb wyświetlić.</p>
     
@@ -163,7 +163,24 @@
 
         <section class="section">
             <div class="section__text">
-                <h3 class="section__text--sidebar-header">Liczby bliźniacze</h3>
+                <h3 class="section__text--sidebar-header">Liczby Fermata</h3>
+
+                <p class="section__text--paragraph">Liczby Fermata to liczby naturalne w postaci <span class="section__text--math">F<sub>n</sub> = 2<sup>2<sup>n</sup></sup> + 1</span>, gdzie <span class="section__text--math">n</span> jest liczbą nieujemną całkowitą.</p>
+
+                <p class="section__text--paragraph">Początkowe liczby Fermata <span class="section__text--math">F0,...,F4</span> są liczbami pierwszymi. Fermat zakłada, że wszystkie liczby w postaci <span class="section__text--math">F<sub>n</sub> = 2<sup>2<sup>n</sup></sup> + 1</span> są pierwze, jednak Leonhard Euler w roku 1732 wykzał, że <span class="section__text--math">F<sub>5</sub> = 4294967297 = 641 * 6700417</span>.</p>
+
+                <p class="section__text--paragraph">Na dzisiaj nie wiemy czy jest więcej liczb pierwszych Fermata.</p>
+            </div>
+
+            <figure class="section__figure">
+                <img src="./images/Pierre de Fermat.png" alt="Zdjęcie Pierre de Fermat" class="section__figure__image">
+                <figcaption class="section__figure__description">Pierre de Fermat</figcaption>
+            </figure>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h3 class="section__text--sidebar-header" id="liczby-blizniacze">Liczby bliźniacze</h3>
 
                 <p class="section__text--paragraph">Liczby bliźniacze to dwie liczby pierwsze różniące się o 2 na przykład: </p>
 
@@ -204,7 +221,7 @@
 
         <section class="section">
             <div class="section__text">
-                <h3 class="section__text--sidebar-header">Liczby pierwsze Germain</h3>
+                <h3 class="section__text--sidebar-header" id="liczby-germain">Liczby pierwsze Germain</h3>
 
                 <p class="section__text--paragraph">Liczbę pierwszą <span class="section__text--math">p</span> nazywamy liczbą Sophie Germain jeżeli liczba <span class="section__text--math"> 2p + 1</span> również jest liczbą pierwszą. Przykładem może być liczba 23, ponieważ 2 * 23 + 1 = 47 i 47 też jest liczbą pierwszą.</p>
             </div>
@@ -339,7 +356,7 @@
 
         <section class="section">
             <div class="section__text">
-                <h2 class="section__text--main-header" id="ciekawostki">Ciekawostki</h2>
+                <h2 class="section__text--main-header" id="ciekawostki">Ciekawostki i hipotezy</h2>
             </div>
         </section>
 
@@ -363,10 +380,107 @@
 
         <section class="section">
             <div class="section__text">
-                <h3 class="section__text--sidebar-header">Lorem ipsum</h3>
+                <h3 class="section__text--sidebar-header">Problemy i hipotezy</h3>
 
-                <p class="section__text--paragraph"><u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus soluta ipsa natus aperiam minima cumque enim dolorum magni? Dolore illum atque, velit excepturi expedita similique rerum ullam dicta voluptatum pariatur harum corporis adipisci accusantium repudiandae nihil ratione maiores, eveniet rem officia modi explicabo distinctio consequuntur minima! Beatae commodi voluptate minus!</u></p>
+                <p class="section__text--paragraph">Choć wielu już wiemy o liczbach pierwszych wciąż jest wiele twierdzeń i hipotez, które jeszcze nie zostały udowodnione: </p>
+
+                <ul class="section__text--list">
+                    <li><a href="#hipoteza-goldbacha">Hipoteza Goldbacha </a>: czy każda liczba parzysta większa od 2 może być przedstawiona w postaci sumy dwóch liczb pierwszych?</li>
+                    <li>Zawsze (dla każdego n) istnieje jakaś liczba pierwsza pomiędzy <span class="section__text--math">n<sup>2</sup></span> i <span class="section__text--math">(n+1)<sup>2</sup></span>.</li>
+                    <li>Każda liczba parzysta może być przedstawiona jako suma dwu liczb pierwszych.</li>
+                    <li>Istnieje nieskończenie wiele par liczb pierwszych różniących się dokładnie o 2.</li>
+                    <li>Czy <a href="#liczby-mersenne">liczb pierwszych Mersenne’a</a> jest nieskończenie wiele?</li>
+                    <li>Czy <a href="#liczby-blizniacze">liczb pierwszych bliźniaczych</a> jest nieskończenie wiele?</li>
+                    <li>Czy <a href="#liczby-germain"> liczb pierwszych Germain </a> jest nieskończenie wiele?</li>
+                </ul>
             </div>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h3 class="section__text--sidebar-header" id="hipoteza-goldbacha">Hipoteza Goldbacha</h3>
+
+                <p class="section__text--paragraph">W 1742 roku w liście do Leonharda Eulera, Christian Goldbach przedstawił hipotezę, że</p>
+
+                <blockquote class="section__text__quote">
+                    <q class="section__text__quote--text">Każda nieparzysta liczba naturalna większa niż 5 może być przedstawiona w postaci sumy trzech liczb pierwszych (ta sama liczba pierwsza może być użyta dwukrotnie).</q>
+                </blockquote>
+
+                <p class="section__text--paragraph">Euler po otrzymaniu listu stwerdził, że hipotezę tę można uprościć i przedstawić w następujący sposób: </p>
+
+                <blockquote class="section__text__quote">
+                    <q class="section__text__quote--text">Każda liczba naturalna parzysta większa od 2 jest sumą dwóch liczb pierwszych.</q>
+                </blockquote>
+
+                <p class="section__text--paragraph">Powyższą hipotezę, do dzisiaj nazywaną "hipotezą Goldbacha", sformułował w rezultacie Euler, jednak nazwa nie została zmieniona.</p>
+
+                <p class="section__text--paragraph">Dzięki użyciu komputerów udało się pokazać, że hipoteza Goldbacha jest prawdziwa dla liczb naturalnych mniejszych niż <span class="section__text--math">4 · 10<sup>17</sup></span>  (przez przedstawienie każdej z tych liczb w postaci sumy dwóch liczb pierwszych). Co więcej, większość współczesnych matematyków uważa, iż jest ona prawdziwa, ponieważ ze względu na stosunkowo gęsty rozkład liczb pierwszych wydaje się, że większe liczby parzyste coraz łatwiej jest przedstawić w postaci sumy dwóch liczb pierwszych.</p>
+
+                <p class="section__text--paragraph">Mimo to pomimo liczbych prób oraz wysokich nagród finansowych ufundowanych za jej udowodnienie lub obalenie, hipoteza Goldbacha pozostaje do dnia dzisiejszego nierozstrzygnięta. Do chwili obecnej udowodniono jedynie, że każda parzysta liczba naturalna większa niż 2 może zostać przedstawiona jako suma co najwyżej sześciu liczb pierwszych, a także, że każda parzysta liczba naturalna większa niż 2 może zostać przedstawiona jako suma liczby pierwszej oraz liczby, która ma co najwyżej dwa czynniki pierwsze.</p>
+            </div>
+
+            <figure class="section__figure">
+                <img src="./images/Christian Goldbach.png" alt="Zdjęcie Christiana Goldbacha" class="section__figure__image">
+                <figcaption class="section__figure__description">Christian Goldbach</figcaption>
+
+                <img src="./images/Leonhard Euler.jpeg" alt="Zdjęcie Leonharda Eulera" class="section__figure__image">
+                <figcaption class="section__figure__description">Leonhard Euler</figcaption>
+            </figure>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h3 class="section__text--sidebar-header">Wzory liczb pierwszych </h3>
+
+                <p class="section__text--paragraph">Na przestrzeni wieków wielu sławnych matematyków jak i zwykłych amatorów próbowało znaleźć wzory generujące w prosty sposób liczby pierwsze. Ideałem byłby wzór, z którego przy podstawianiu kolejnych liczb naturalnych ( bez żadnego ograniczenia ) otrzymywalibyśmy kolejne liczby pierwsze, ale wydaje się, że niemożliwe jest istnienie takiego wzoru. Szuakno takich wzorów wśród trójmianów kwadratowych. Adrien Marie Legendre znalazł wyrażenie: <span class="section__text--math">2n<sup>2</sup> + 29</span>. Dla n = 1, 2, 3,... 28 otrzymano 28 różnych liczb pierwszych. Równiez Leonhard Euler starał się wyprowadzić takie wyrażenia i znalazł dwa: <span class="section__text--math">n<sup>2</sup> -n - 41</span> w którym dla n = 1, 2, 3, ...., 40 otrzymamy 40 różynch liczb pierwszych oraz <span class="section__text--math">n<sup>2</sup> - 79n + 1601</span> dla którego można otrzymać aż 79 liczb pierwszych lecz 39 liczb się powtarza.</p>
+
+                <p class="section__text--paragraph">Poniżej przykłady innych wzór, które generują liczby pierwsze: </p>
+
+                <ul class="section__text--list">
+                    <li><span class="section__text--math">n<sup>2</sup> - 3n + 43</span> - 41 liczb pierwszych w tym 1 liczba powtarzająca się</li>
+                    <li><span class="section__text--math">n<sup>2</sup> - 5n + 47</span> - 42 liczby pierwsze w tym 2 liczby powtarzające się</li>
+                    <li><span class="section__text--math">n<sup>2</sup> - 81n + 1681</span> - 80 liczb pierwszych w tym 40 liczb powtarzających się</li>
+                    <li><span class="section__text--math">2n<sup>2</sup> - 116n + 1711</span> - 57 liczb pierwszych w tym 28 liczb powtarzających się</li>
+                    <li><span class="section__text--math">3n<sup>2</sup> - 135n + 1541</span> - 44 liczb pierwszych w tym 22 liczby powtarzające się</li>
+                    <li><span class="section__text--math">4n<sup>2</sup> - 166n + 1763</span> - 40 unikalnych liczb pierwszych</li>
+                    <li><span class="section__text--math">6n<sup>2</sup> - 354n + 5251</span> - 58 liczb pierwszych w tym 29 liczb powtarzających się</li>
+                    <li><span class="section__text--math">9n<sup>2</sup> - 249n + 1763</span> - 40 unikalnych liczb pierwszych</li>
+                </ul>
+            </div>
+
+            <figure class="section__figure">
+                <img src="./images/Adrien Marie Legrende.jpg" alt="Zdjęcie Adriene Marie Legrende" class="section__figure__image">
+                <figcaption class="section__figure__description">Adrien Marie Legrende</figcaption>
+            </figure>
+        </section>
+
+        <section class="section">
+            <div class="section__text">
+                <h3 class="section__text--sidebar-header">Twierdzenie Fermata o sumie dwóch kwadratów</h3>
+
+                <p class="section__text--paragraph">Kolejnym bardzo ciekawym twierdzeniem związanym z liczbami pierwszymi jest twierdzenie o sumie dwóch kwadratów. Liczby pierwsze nieparzyste można podzielić na dwie grupy, pierwsza składa się z liczb, które przy dzieleniu przez 4 dają resztę 1, druga grupa składa się z liczb, które przy dzieleniu przez 4 dają resztę 3. Pierwszą grupę możemy zapisać w postaci <span class="section__text--math">4k+1</span>, drugą grupę <span class="section__text--math">4k+3</span> , gdzie k jest liczbą całkowitą.</p>
+
+                <p class="section__text--paragraph">Twierdzenie mówi o tym, że: </p>
+
+                <blockquote class="section__text__quote">
+                    <q class="section__text__quote--text">Wszystkie liczby pierwsze postaci 4k+1 można przedstawić jako sumę dwóch kwadratów, i to tylko w jeden sposób oraz żadnej liczby pierwszej postaci 4k+3 nie można przedstawić w taki sposób.</q>
+                </blockquote>
+
+                <p class="section__text--paragraph">Przykłady takiego rozkładu: </p>
+
+                <ul class="section__text--list">
+                    <li><span class="section__text--math">5 = 1<sup>2</sup> + 2<sup>2</sup></span></li>
+                    <li><span class="section__text--math">13 = 2<sup>2</sup> + 3<sup>2</sup></span></li>
+                    <li><span class="section__text--math">17 = 1<sup>2</sup> + 4<sup>2</sup></span></li>
+                    <li><span class="section__text--math">29 = 2<sup>2</sup> + 5<sup>2</sup></span></li>
+                    <li><span class="section__text--math">37 = 1<sup>2</sup> + 6<sup>2</sup></span></li>
+                </ul>
+            </div>
+
+            <figure class="section__figure">
+                <img src="./images/Pierre de Fermat.png" alt="Zdjęcie Pierre de Fermat" class="section__figure__image">
+                <figcaption class="section__figure__description">Pierre de Fermat</figcaption>
+            </figure>
         </section>
 
         <section class="section">
