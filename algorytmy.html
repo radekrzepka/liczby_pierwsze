@@ -34,6 +34,7 @@
     <script src="./js/arrow.js" defer></script>
     <script src="./js/lucas-test.js" defer></script>
     <script src="./js/prime-test.js" defer></script>
+    <script src="./js/eratostenes-sieve.js" defer></script>
 </head>
 
 <body>
@@ -92,6 +93,24 @@
 
                 <p class="section__text--paragraph">Jeżeli okazało by się, że któraś z tych liczb jest dzielniekiem, oznacza to, że nasza liczba nie jest pierwsza.</p>
 
+                <p class="section__text--paragraph">Jednak teraz pojawia się pytanie dlaczego wystarczy sprawdzic tylko liczby od 2 do &radic;n</p>
+
+                <p class="section__text--paragraph">Przenalizujmy to na przykładzie liczb: 23, 33 i 36.</p>
+
+                <p class="section__text--math">&radic;23 &asymp; 4,8</p>
+
+                <p class="section__text--math">D<sub>23</sub> = {1, |4,8|, 23}</p>
+
+                <p class="section__text--math">&radic;33 &asymp; 5,7</p>
+
+                <p class="section__text--math">D<sub>33</sub> = {1, 3, |5,7|, 11, 33}</p>
+
+                <p class="section__text--math">&radic;36 = 6</p>
+
+                <p class="section__text--math">D<sub>36</sub> = {1, 2, 3, 4, 6, 9, 12, 18, 36}</p>
+
+                <p class="section__text--paragraph">Mozna łatwo zauważyć, że jeśli liczba dzielników liczby <span class="section__text--math">n</span> będzie tyle samo po lewej stronie jak i po prawej <span class="section__text--math">&radic;n</span>. Dzięki tym przykładom można zauważyć, że jeśli jedynym dzielnikiem mniejszym lub równym <span class="section__text--math">&radic;n</span> jest 1 to liczba ta jest pierwsza.</p>
+
                 <p class="section__text--paragraph">Powyższą metodą można sprawdzić pierwszość każdej liczby naturalnej większej od 1, jednak w porównaniu do <a href="#lucas-test">testu Lucasa-Lehmera</a> czas wykonania tego algorytmu dla bardzo dużych liczb jest dłuższy.</p>
 
                 <p class="section__text--paragraph"><i>(Dla n &lt; 1 000 000, wyświetlany jest cały algorytm, a w przypadku n &ge; 1 000 000 wyświetlany jest tylko wynik działania algorytmu oraz czas jego działania.)</i>.</p>
@@ -105,7 +124,7 @@
         </section>
 
         <section class="section">
-            <div class="section__text">
+            <div class="section__text eratostenes-div">
                 <h3 class="section__text--sidebar-header">Sito Eratostenesa</h3>
 
                 <p class="section__text--paragraph">Sito Eratostenesa jest to algorytm przypisywany Eratostenesowi z Cyreny wymyślony już w III w. p.n.e służący do wyznaczania liczb pierwszych z zadanego przedziału <span class="section__text--math"> [2;n]</span>.</p>
@@ -120,7 +139,13 @@
 
                 <p class="section__text--paragraph">Dla danej liczby <span class="section__text--math">n</span> wszystkie wykreślonej liczby mniejsze lub równe <span class="section__text--math">n</span> są liczbami pierwszymi.</p>
 
-                <img src="./images/sito eratostenesa.gif" alt="Przedstawienie działania sita Eratostenesa" class="section__text--image">
+                <img src="./images/sito eratostenesa.gif" alt="Przedstawienie działania sita Eratostenesa" class="section__text--image"><br>
+
+                <label for="eratostenes-input">Podaj liczbę n do której mam wyznaczyć wszystkie liczby pierwsze sitem Eratostenesa: </label>
+
+                <input type="number" class="section__text--input eratostenes-input" id="eratostenes-input"> <br>
+                
+                <button type="button" class="section__text--button eratostenes-button">Wyznacz</button>
             </div>
 
             <figure class="section__figure">
@@ -169,15 +194,8 @@
             </figure>
         </section>
 
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Lorem ipsum</h3>
-
-                <p class="section__text--paragraph"><u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus soluta ipsa natus aperiam minima cumque enim dolorum magni? Dolore illum atque, velit excepturi expedita similique rerum ullam dicta voluptatum pariatur harum corporis adipisci accusantium repudiandae nihil ratione maiores, eveniet rem officia modi explicabo distinctio consequuntur minima! Beatae commodi voluptate minus!</u></p>
-            </div>
-        </section>
-
     <img src="./images/icons/arrow-side.svg" class="arrow-image closed">  
+    
     </main>
 
     <footer class="footer">

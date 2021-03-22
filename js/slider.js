@@ -37,7 +37,7 @@ const slider = () => {
 
     const changeSlide = () => {
         active++;
-        if(active === slideList.length) active = 0;
+        if (active === slideList.length) active = 0;
 
         changeContent();
     }
