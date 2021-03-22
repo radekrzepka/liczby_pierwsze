@@ -21,36 +21,30 @@
     <script src="./js/slider.js" defer></script>
     <script src="./js/hamburger-menu.js" defer></script>
     <script src="./js/arrow.js" defer></script>
-    <script src="./js/mersenne-primes.js" defer></script>
-    <script src="./js/lucas-test.js" defer></script>
-    <script src="./js/prime-test.js" defer></script>
 </head>
 
 <body>
     <header class="header">
         <nav class="navigation" id="navigation">
-            <a href="#"><img src="./images/logo.svg" alt="Logo strony" class="navigation__logo"></a>
+            <a href="index.html"><img src="./images/logo.svg" alt="Logo strony" class="navigation__logo"></a>
             <ul class="navigation__list">
                 <li class="navigation__list__item">
-                    <a href="#definicja" class="navigation__list__item--link">Definicja</a>
+                    <a href="rozmieszczenie.html" class="navigation__list__item--link">Rozmieszczenie</a>
                 </li>
                 <li class="navigation__list__item">
-                    <a href="#rozmieszczenie" class="navigation__list__item--link">Rozmieszczenie</a>
+                    <a href="rodzaje.html" class="navigation__list__item--link">Rodzaje</a>
                 </li>
                 <li class="navigation__list__item">
-                    <a href="#rodzaje" class="navigation__list__item--link">Rodzaje</a>
+                    <a href="algorytmy.html" class="navigation__list__item--link">Algorytmy</a>
                 </li>
                 <li class="navigation__list__item">
-                    <a href="#algorytmy" class="navigation__list__item--link">Algorytmy</a>
+                    <a href="zastosowania.html" class="navigation__list__item--link">Zastosowania</a>
                 </li>
                 <li class="navigation__list__item">
-                    <a href="#zastosowania" class="navigation__list__item--link">Zastosowania</a>
-                </li>
-                <li class="navigation__list__item">
-                    <a href="#ciekawostki" class="navigation__list__item--link">Ciekawostki</a>
+                    <a href="ciekawostki.html" class="navigation__list__item--link">Ciekawostki</a>
                 </li> 
                 <li class="navigation__list__item">
-                    <a href="#o-stronie" class="navigation__list__item--link">O stronie</a>
+                    <a href="ostronie.html" class="navigation__list__item--link">O stronie</a>
                 </li> 
             </ul>
             <div class="header__hamburger-icon">
@@ -72,7 +66,7 @@
     <main class="main">
         <section class="section">
             <div class="section__text">
-                <h2 class="section__text--main-header" id="definicja">Definicja</h2>
+                <h2 class="section__text--main-header" id="definicja">Czym jest liczba pierwsza ?</h2>
 
                 <p class="section__text--paragraph">Wszystkie liczby naturalne można podzielić na trzy typy.</p>
 
@@ -110,421 +104,12 @@
                 <figcaption class="section__figure__description">Euklides</figcaption>
             </figure>
         </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h2 class="section__text--main-header" id="rozmieszczenie">Rozmieszczenie liczb pierwszych</h2>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Lorem ipsum</h3>
-
-                <p class="section__text--paragraph"> <u> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt culpa iure sunt, incidunt illum rerum voluptas commodi repudiandae libero repellat excepturi inventore harum ex vero! Odio voluptatem consequatur vero ducimus quaerat corporis libero molestias, perferendis maiores iure sit suscipit incidunt voluptates ipsam officia quam harum vitae placeat? Voluptatibus, beatae quidem.</u></p>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h2 class="section__text--main-header" id="rodzaje">Rodzaje liczb pierwszych</h2>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text mersenne-primes-div">
-                <h3 class="section__text--sidebar-header" id="liczby-mersenne">Liczby pierwsze Mersenne'a</h3>
-
-                <p class="section__text--paragraph">W XVII wieku francuski mnich Marin Mersenne rozpatrzył możliwość istnienia liczby pierwszych w postaci <span class="section__text--math">2<sup>n</sup>-1</span>.</p>
-    
-                <p class="section__text--paragraph">Stwierdził bez dowodu, że <span class="section__text--math">2<sup>n</sup>-1</span> jest liczbą pierwszą dla <span class="section__text--math">n = 2,3,5,7,13,17,19,31,67,127,257 </span> i nie jest nią dla żadnej inne wartości <span class="section__text--math">n</span> mniejszej od 257. Dziś jednak wiemy, że francuz pominął <span class="section__text--math">n = 61,89,107</span> i błędnie określił jako liczby pierwsze liczby dla <span class="section__text--math">n = 67,257</span>.</p>
-
-                <p class="section__text--paragraph">Liczby Mersenne'a charakteryzują się również tym, że liczby te w zapisie binarnym złożone są z samych jedynek co ułatwia komputerom sprawdzenie ich pierwszości i przez to często największą znaną liczbą pierwszą jest właśnie liczba Mersenne'a.</p>
-
-                <p class="section__text--paragraph">To właśnie wśród liczb Mersenne'a Aktualnie poszukiwaniem liczb pierwszych Mersenne'a zajmuje się <a href="https://www.mersenne.org" target="_blank" rel="noreferrer"> GIMPS(Great Internet Mersenne Prime Search)</a>. Projekt wykorzystuje obliczenia rozproszone, dzięki czemu każdy użytkownik może udostępnić moc obliczeniową swojego komputera, aby dołożyć swoją cegiełkę do poszukiwania kolejny liczb pierwszych.</p>
-    
-                <p class="section__text--paragraph">Pierwszość liczb Mersenne’a sprawdza się za pomocą testu <a href="#lucas-test">Lucasa-Lehmera</a>.</p>
-
-                <p class="section__text--paragraph">Liczby pierwsze Mersenne’a są bezpośrednio związanie z odnajdywaniem kolejnych <a href="https://pl.wikipedia.org/wiki/Liczba_doskonała" target="_blank" rel="noreferrer" >liczb doskonałych</a> ponieważ występują we wzorze, który je generuje: <span class="section__text--math">2<sup>n-1</sup>*(2<sup>n</sup>-1)</span> , gdzie wyrażenie <span class="section__text--math"> 2<sup>n</sup> - 1 </span>to liczba pierwsza Mersenne’a, dzięki czemu przy odkryciu kolejnej największej liczby pierwszej Mersenne’a odkrywana jest również największa liczba doskonała, którą aktualnie jest liczba:<span class="section__text--math"> 2<sup>82589932</sup>*(2<sup>82589933</sup> - 1)</span>, której rozwinięcie dziesiętne liczy aż 24 862 048 cyfr.</p>
-
-                <p class="section__text--paragraph">Aktualnie nie wiadomo czy liczb pierwszych Mersenne'a jest nieskończenie wiele. Na dziś znamy 51. Aby wyświetlić tabele liczb pierwszych Mersenne'a wpisz poniżej ile liczb wyświetlić.</p>
-    
-                <label for="meresenne-input">Podaj ile liczb pierwszych Mersenne’a mam wypisać:</label>
-
-                <input type="number" class="section__text--input mersenne-primes-input" min="1" max="51" id="meresenne-input"> <br>
-
-                <button type="button" class="section__text--button mersenne-primes-button">Pokaż tabele</button>
-            </div>
-
-            <figure class="section__figure">
-                <img src="./images/Marin Mersenne.jpeg" alt="Zdjęcie Marina Mersenne'a" class="section__figure__image">
-                <figcaption class="section__figure__description">Marin Mersenne</figcaption>
-            </figure>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Liczby Fermata</h3>
-
-                <p class="section__text--paragraph">Liczby Fermata to liczby naturalne w postaci <span class="section__text--math">F<sub>n</sub> = 2<sup>2<sup>n</sup></sup> + 1</span>, gdzie <span class="section__text--math">n</span> jest liczbą nieujemną całkowitą.</p>
-
-                <p class="section__text--paragraph">Początkowe liczby Fermata <span class="section__text--math">F0,...,F4</span> są liczbami pierwszymi. Fermat zakłada, że wszystkie liczby w postaci <span class="section__text--math">F<sub>n</sub> = 2<sup>2<sup>n</sup></sup> + 1</span> są pierwze, jednak Leonhard Euler w roku 1732 wykzał, że <span class="section__text--math">F<sub>5</sub> = 4294967297 = 641 * 6700417</span>.</p>
-
-                <p class="section__text--paragraph">Na dzisiaj nie wiemy czy jest więcej liczb pierwszych Fermata.</p>
-            </div>
-
-            <figure class="section__figure">
-                <img src="./images/Pierre de Fermat.png" alt="Zdjęcie Pierre de Fermat" class="section__figure__image">
-                <figcaption class="section__figure__description">Pierre de Fermat</figcaption>
-            </figure>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header" id="liczby-blizniacze">Liczby bliźniacze</h3>
-
-                <p class="section__text--paragraph">Liczby bliźniacze to dwie liczby pierwsze różniące się o 2 na przykład: </p>
-
-                <ul class="section__text--list">
-                    <li>3 i 5</li>
-                    <li>5 i 7</li>
-                    <li>59 i 62</li>
-                </ul>
-
-                <p class="section__text--paragraph">Na dzisiaj dwoma największymi liczbami bliźniaczymi są: <span class="section__text--math">2996863034895·2<sup>1290000</sup>+1</span> i <span class="section__text--math">2996863034895·2<sup>1290000</sup>-1</span>.</p>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Liczby czworacze</h3>
-
-                <p class="section__text--paragraph">Liczby czworacze to liczby pierwsze w postaci: <span class="section__text--math">p, p+2, p+6, p+8</span>. Można zauważyć, że są to liczby bliźniacze w najbliższym sąsiedztwie. Łatwo też zauważyć, że oprócz pierwszej czwórki, zawsze ostatnimi cyframi takich liczb są odpowiednio: 1, 3, 7, 9.</p>
-
-                <p class="section__text--paragraph">Przykład wszystkich liczb czworaczych mniejszych od 10000: </p>
-
-                <ul class="section__text--list">
-                    <li>5,7,11,13</li>
-                    <li>11,13,17,19</li>
-                    <li>101,103,107,109</li>
-                    <li>191,193,197,199</li>
-                    <li>821,823,827,829</li>
-                    <li>1481,1483,1487,1489</li>
-                    <li>1871,1873,1877,1879</li>
-                    <li>2081, 2083, 2087, 2089</li>
-                    <li>3251, 3253, 3257, 3259</li>
-                    <li>3461, 3463, 3467, 3469</li>
-                    <li>5651, 5653, 5657, 5659</li>
-                    <li>9431, 9433, 9437, 9439</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header" id="liczby-germain">Liczby pierwsze Germain</h3>
-
-                <p class="section__text--paragraph">Liczbę pierwszą <span class="section__text--math">p</span> nazywamy liczbą Sophie Germain jeżeli liczba <span class="section__text--math"> 2p + 1</span> również jest liczbą pierwszą. Przykładem może być liczba 23, ponieważ 2 * 23 + 1 = 47 i 47 też jest liczbą pierwszą.</p>
-            </div>
-
-            <figure class="section__figure">
-                <img src="./images/Sophie Germain.jpg" alt="Zdjęcie Sophii Germain" class="section__figure__image">
-                <figcaption class="section__figure__description">Sophie Germain</figcaption>
-            </figure>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Liczby pierwsze lustrzane</h3>
-
-                <p class="section__text--paragraph">Są to liczby pierwsze, z których jedna powstaje przez zapisanie cyfr drugiej w odwrotnej kolejności. Przykłady: </p>
-
-                <ul class="section__text--list">
-                    <li>13 i 31</li>
-                    <li>17 i 71</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Liczby pierwsze palindromiczne</h3>
-
-                <p class="section__text--paragraph">To liczby pierwsze, które nie zmieniają się, gdy ich cyfry dziesiętne zapiszemy w odwrotnej kolejności. Przykłady: </p>
-
-                <ul class="section__text--list">
-                    <li>11</li>
-                    <li>101</li>
-                    <li>131</li>
-                    <li>191</li>
-                    <li>929</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h2 class="section__text--main-header" id="algorytmy">Algorytmy liczb pierwszych</h2>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text prime-test-div">
-                <h3 class="section__text--sidebar-header">Sprawdzenie pierwszości poprez sprawdzenie podzielności</h3>
-
-                <p class="section__text--paragraph">Najprostrzą metodą aby zbadać czy liczba jest pierwsza jest sprawdzenie jej dzielników. Aby zbadać liczbę <span class="section__text--math">n</span> sprawdzamy kolejny liczby naturalne należącę do przedziału <span class="section__text--math">[2,..., &radic;n]</span>.</p>
-
-                <p class="section__text--paragraph">Jeżeli okazało by się, że któraś z tych liczb jest dzielniekiem, oznacza to, że nasza liczba nie jest pierwsza.</p>
-
-                <p class="section__text--paragraph">Powyższą metodą można sprawdzić pierwszość każdej liczby naturalnej większej od 1, jednak w porównaniu do <a href="#lucas-test">testu Lucasa-Lehmera</a> czas wykonania tego algorytmu dla bardzo dużych liczb jest dłuższy.</p>
-
-                <p class="section__text--paragraph"><i>(Dla n &lt; 1 000 000, wyświetlany jest cały algorytm, a w przypadku n &ge; 1 000 000 wyświetlany jest tylko wynik działania algorytmu oraz czas jego działania.)</i>.</p>
-
-                <label for="prime-test">Podaj liczbę, której pierwszość mam sprawdzić: </label>
-
-                <input type="number" class="section__text--input prime-test-input" id="prime-test"> <br>
-                
-                <button type="button" class="section__text--button prime-test-button">Sprawdź</button>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Sito Eratostenesa</h3>
-
-                <p class="section__text--paragraph">Sito Eratostenesa jest to algorytm przypisywany Eratostenesowi z Cyreny wymyślony już w III w. p.n.e służący do wyznaczania liczb pierwszych z zadanego przedziału <span class="section__text--math"> [2;n]</span>.</p>
-
-                <p class="section__text--paragraph">Działanie sita polega na wybraniu ze zbioru <span class="section__text--math"> [2;n]</span> najmniejszej liczby czyli 2 i wykreśleniu wszystkich jej wielokrotności większej od niej, czyli <span class="section__text--math">4,6,8,10,....</span>.</p>
-
-                <p class="section__text--paragraph">Z pozostałych liczb wybieramy kolejną najmniejszą nie wykreśloną czyli 3 i ponownie wykreślamy wszystkie jej wielokrotności czyli: <span class="section__text--math">6,9,12,15,....</span>. Niektóre liczby takie jak 6 lub 12 będą skreślone jeszcze raz czym się nie przejmujemy.</p>
-
-                <p class="section__text--paragraph">Tak samo robimy z kolejną najmniejszą niewykreśloną liczbą czyli 5.</p>
-
-                <p class="section__text--paragraph">Proces powtarzamy tak długo, gdy liczba <span class="section__text--math">i</span>, której wielokrotności chcemy wykreślać jest większa od <span class="section__text--math"> &#8730;n</span>.</p>
-
-                <p class="section__text--paragraph">Dla danej liczby <span class="section__text--math">n</span> wszystkie wykreślonej liczby mniejsze lub równe <span class="section__text--math">n</span> są liczbami pierwszymi.</p>
-
-                <img src="./images/sito eratostenesa.gif" alt="Przedstawienie działania sita Eratostenesa" class="section__text--image">
-            </div>
-
-            <figure class="section__figure">
-                <img src="./images/Eratostenes.png" alt="Zdjęcie Eratostenesa" class="section__figure__image">
-                <figcaption class="section__figure__description">Eratostenes</figcaption>
-            </figure>
-        </section>
-
-        <section class="section">
-            <div class="section__text lucas-test-div">
-                <h3 class="section__text--sidebar-header" id="lucas-test">Test Lucasa-Lehmera</h3>
-
-                <p class="section__text--paragraph">Test Lucasa-Lehmera jest testem pierwszości dla liczb Mersenne'a. Test ten został ułożony przez Edwarda Lucasa w 1856, a następnie ulepszony przez niego w 1878. Podany wniosek stwierdzał, że liczba <span class="section__text--math">2<sup>p</sup>-1</span> jest liczbą pierwszą wtedy gdy jest dzielnikiem liczby wyrazu <span class="section__text--math">L<sub>p-1</sub></span> ciągu określonego następująco:</p>
-
-                <p class="section__text--math">L<sub>1</sub>=4</p>
-
-                <p class="section__text--math">L<sub>n</sub>= L<sub>n-1</sub><sup>2</sup>-2</p>  
-
-                <p class="section__text--paragraph">Nie wiadomo, jak Lucas wymyślił tę własność i że nie potrafił jej formalnie udowodnić.</p>
-                    
-                <p class="section__text--paragraph"> Warunek podany przez Lucasa został udowodniony dopiero w XX wieku przez Amerykanina Derricka Henry'ego Lehmera i od tego czasu nosił nazwą <strong>testu Lucasa-Lehmera</strong>.</p>
-                    
-                <p class="section__text--paragraph">Ten właśnie test jest wykorzystywany przez serwis GIMPS do znajdowania dużych liczb pierwszych Mersenne’a.</p>
-                   
-                <p class="section__text--paragraph">Zaletą tego algorytmu są takie, że działa bardzo szybko i dla przykłady liczbę <span class="section__text--math">2<sup>89</sup>-1</span> posiadającą 27 cyfr potrafi określić jako liczbę pierwszą w ciągu 1ms! </p>
-
-                <p class="section__text--paragraph">Jego wadą jest jednak, że używać można go tylko dla liczb Mersenne’a.</p>
-
-                <p class="section__text--paragraph">Poniżej można sprawdzić działanie testu Lucasa-Lehmera. Poniżej można wprowadzić liczbę n, która będzie n-tą liczbą Mersenne’a i sprawdzić działanie testu oraz czy ta liczba jest pierwsza.</p>
-
-                <p class="section__text--paragraph"><i>(Dla n &lt; 70, wyświetlany jest cały algorytm, a w przypadku n &ge; 70 wyświetlany jest tylko wynik działania algorytmu oraz czas jego działania)</i>.</p>
-
-                <label for="lucas-input">Podaj którą liczbę Mersenne’a mam sprawdzić: </label>
-
-                <input type="number" class="section__text--input lucas-test-input" id="lucas-input"> <br>
-                
-                <button type="button" class="section__text--button lucas-test-button">Sprawdź</button>
-            </div>
-
-            <figure class="section__figure">
-                <img src="./images/Edward Lucas.jpg" alt="Zdjęcie Edwarda Lucasa" class="section__figure__image">
-                <figcaption class="section__figure__description">Edward Lucas</figcaption>
-
-                <img src="./images/Derrick Henry Lehmer.jpg" alt="Zdjęcie Derrick Henry'ego Lehmera" class="section__figure__image">
-                <figcaption class="section__figure__description">Derrick Henry Lehmer</figcaption>
-            </figure>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Lorem ipsum</h3>
-
-                <p class="section__text--paragraph"><u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus soluta ipsa natus aperiam minima cumque enim dolorum magni? Dolore illum atque, velit excepturi expedita similique rerum ullam dicta voluptatum pariatur harum corporis adipisci accusantium repudiandae nihil ratione maiores, eveniet rem officia modi explicabo distinctio consequuntur minima! Beatae commodi voluptate minus!</u></p>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h2 class="section__text--main-header" id="zastosowania">Zastosowania</h2>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Lorem ipsum</h3>
-
-                <p class="section__text--paragraph"><u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus soluta ipsa natus aperiam minima cumque enim dolorum magni? Dolore illum atque, velit excepturi expedita similique rerum ullam dicta voluptatum pariatur harum corporis adipisci accusantium repudiandae nihil ratione maiores, eveniet rem officia modi explicabo distinctio consequuntur minima! Beatae commodi voluptate minus!</u></p>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h2 class="section__text--main-header" id="ciekawostki">Ciekawostki i hipotezy</h2>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Największe liczby pierwsze</h3>
-
-                <p class="section__text--paragraph">Aktualnie największą znaną liczbą pierwszą jest 51 <a href="#liczby-mersenne">liczba pierwsza Mersenne’a</a>: <span class="section__text--math">2<sup>82589933</sup> - 1</span> odkryta 7 grudnia 2018 roku, której zapis dziesiętny liczby 24 862 048 cyfr.</p>
-
-                <p class="section__text--paragraph">W marcu 2021 roku osiem największych znanych liczb pierwszych są to liczby pierwsze Mersenne’a. Największą znaną liczbą pierwszą, która nie jest liczbą pierwszą Mersenne’a jest:</p>
-
-                <p class="section__text--math">10223*2<sup>31172165</sup> + 1</p>
-
-                <p class="section__text--paragraph">Jej zapis dziesiętny liczy 9 383 761 cyfr. Liczba ta jest dziewiątą co do wielkości znaną liczbą pierwszą i została odkryta 31 października 2016 roku w ramach projektu PrimeGrid.</p>
-
-                <p class="section__text--paragraph">Największą liczbą pierwszą poznaną przed erą elektroniki jest 44-cyfrowa liczba Ferriera, która została znaleziona za pomocą mechanicznego kalkulatora: </p>
-
-                <p class="section__text--math"><img src="./images/liczba ferriera.svg" alt="Liczba Ferriera" class="section__text--ferrier-image"></p>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Problemy i hipotezy</h3>
-
-                <p class="section__text--paragraph">Choć wielu już wiemy o liczbach pierwszych wciąż jest wiele twierdzeń i hipotez, które jeszcze nie zostały udowodnione: </p>
-
-                <ul class="section__text--list">
-                    <li><a href="#hipoteza-goldbacha">Hipoteza Goldbacha </a>: czy każda liczba parzysta większa od 2 może być przedstawiona w postaci sumy dwóch liczb pierwszych?</li>
-                    <li>Zawsze (dla każdego n) istnieje jakaś liczba pierwsza pomiędzy <span class="section__text--math">n<sup>2</sup></span> i <span class="section__text--math">(n+1)<sup>2</sup></span>.</li>
-                    <li>Każda liczba parzysta może być przedstawiona jako suma dwu liczb pierwszych.</li>
-                    <li>Istnieje nieskończenie wiele par liczb pierwszych różniących się dokładnie o 2.</li>
-                    <li>Czy <a href="#liczby-mersenne">liczb pierwszych Mersenne’a</a> jest nieskończenie wiele?</li>
-                    <li>Czy <a href="#liczby-blizniacze">liczb pierwszych bliźniaczych</a> jest nieskończenie wiele?</li>
-                    <li>Czy <a href="#liczby-germain"> liczb pierwszych Germain </a> jest nieskończenie wiele?</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header" id="hipoteza-goldbacha">Hipoteza Goldbacha</h3>
-
-                <p class="section__text--paragraph">W 1742 roku w liście do Leonharda Eulera, Christian Goldbach przedstawił hipotezę, że</p>
-
-                <blockquote class="section__text__quote">
-                    <q class="section__text__quote--text">Każda nieparzysta liczba naturalna większa niż 5 może być przedstawiona w postaci sumy trzech liczb pierwszych (ta sama liczba pierwsza może być użyta dwukrotnie).</q>
-                </blockquote>
-
-                <p class="section__text--paragraph">Euler po otrzymaniu listu stwerdził, że hipotezę tę można uprościć i przedstawić w następujący sposób: </p>
-
-                <blockquote class="section__text__quote">
-                    <q class="section__text__quote--text">Każda liczba naturalna parzysta większa od 2 jest sumą dwóch liczb pierwszych.</q>
-                </blockquote>
-
-                <p class="section__text--paragraph">Powyższą hipotezę, do dzisiaj nazywaną "hipotezą Goldbacha", sformułował w rezultacie Euler, jednak nazwa nie została zmieniona.</p>
-
-                <p class="section__text--paragraph">Dzięki użyciu komputerów udało się pokazać, że hipoteza Goldbacha jest prawdziwa dla liczb naturalnych mniejszych niż <span class="section__text--math">4 · 10<sup>17</sup></span>  (przez przedstawienie każdej z tych liczb w postaci sumy dwóch liczb pierwszych). Co więcej, większość współczesnych matematyków uważa, iż jest ona prawdziwa, ponieważ ze względu na stosunkowo gęsty rozkład liczb pierwszych wydaje się, że większe liczby parzyste coraz łatwiej jest przedstawić w postaci sumy dwóch liczb pierwszych.</p>
-
-                <p class="section__text--paragraph">Mimo to pomimo liczbych prób oraz wysokich nagród finansowych ufundowanych za jej udowodnienie lub obalenie, hipoteza Goldbacha pozostaje do dnia dzisiejszego nierozstrzygnięta. Do chwili obecnej udowodniono jedynie, że każda parzysta liczba naturalna większa niż 2 może zostać przedstawiona jako suma co najwyżej sześciu liczb pierwszych, a także, że każda parzysta liczba naturalna większa niż 2 może zostać przedstawiona jako suma liczby pierwszej oraz liczby, która ma co najwyżej dwa czynniki pierwsze.</p>
-            </div>
-
-            <figure class="section__figure">
-                <img src="./images/Christian Goldbach.png" alt="Zdjęcie Christiana Goldbacha" class="section__figure__image">
-                <figcaption class="section__figure__description">Christian Goldbach</figcaption>
-
-                <img src="./images/Leonhard Euler.jpeg" alt="Zdjęcie Leonharda Eulera" class="section__figure__image">
-                <figcaption class="section__figure__description">Leonhard Euler</figcaption>
-            </figure>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Wzory liczb pierwszych </h3>
-
-                <p class="section__text--paragraph">Na przestrzeni wieków wielu sławnych matematyków jak i zwykłych amatorów próbowało znaleźć wzory generujące w prosty sposób liczby pierwsze. Ideałem byłby wzór, z którego przy podstawianiu kolejnych liczb naturalnych ( bez żadnego ograniczenia ) otrzymywalibyśmy kolejne liczby pierwsze, ale wydaje się, że niemożliwe jest istnienie takiego wzoru. Szuakno takich wzorów wśród trójmianów kwadratowych. Adrien Marie Legendre znalazł wyrażenie: <span class="section__text--math">2n<sup>2</sup> + 29</span>. Dla n = 1, 2, 3,... 28 otrzymano 28 różnych liczb pierwszych. Równiez Leonhard Euler starał się wyprowadzić takie wyrażenia i znalazł dwa: <span class="section__text--math">n<sup>2</sup> -n - 41</span> w którym dla n = 1, 2, 3, ...., 40 otrzymamy 40 różynch liczb pierwszych oraz <span class="section__text--math">n<sup>2</sup> - 79n + 1601</span> dla którego można otrzymać aż 79 liczb pierwszych lecz 39 liczb się powtarza.</p>
-
-                <p class="section__text--paragraph">Poniżej przykłady innych wzór, które generują liczby pierwsze: </p>
-
-                <ul class="section__text--list">
-                    <li><span class="section__text--math">n<sup>2</sup> - 3n + 43</span> - 41 liczb pierwszych w tym 1 liczba powtarzająca się</li>
-                    <li><span class="section__text--math">n<sup>2</sup> - 5n + 47</span> - 42 liczby pierwsze w tym 2 liczby powtarzające się</li>
-                    <li><span class="section__text--math">n<sup>2</sup> - 81n + 1681</span> - 80 liczb pierwszych w tym 40 liczb powtarzających się</li>
-                    <li><span class="section__text--math">2n<sup>2</sup> - 116n + 1711</span> - 57 liczb pierwszych w tym 28 liczb powtarzających się</li>
-                    <li><span class="section__text--math">3n<sup>2</sup> - 135n + 1541</span> - 44 liczb pierwszych w tym 22 liczby powtarzające się</li>
-                    <li><span class="section__text--math">4n<sup>2</sup> - 166n + 1763</span> - 40 unikalnych liczb pierwszych</li>
-                    <li><span class="section__text--math">6n<sup>2</sup> - 354n + 5251</span> - 58 liczb pierwszych w tym 29 liczb powtarzających się</li>
-                    <li><span class="section__text--math">9n<sup>2</sup> - 249n + 1763</span> - 40 unikalnych liczb pierwszych</li>
-                </ul>
-            </div>
-
-            <figure class="section__figure">
-                <img src="./images/Adrien Marie Legrende.jpg" alt="Zdjęcie Adriene Marie Legrende" class="section__figure__image">
-                <figcaption class="section__figure__description">Adrien Marie Legrende</figcaption>
-            </figure>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Twierdzenie Fermata o sumie dwóch kwadratów</h3>
-
-                <p class="section__text--paragraph">Kolejnym bardzo ciekawym twierdzeniem związanym z liczbami pierwszymi jest twierdzenie o sumie dwóch kwadratów. Liczby pierwsze nieparzyste można podzielić na dwie grupy, pierwsza składa się z liczb, które przy dzieleniu przez 4 dają resztę 1, druga grupa składa się z liczb, które przy dzieleniu przez 4 dają resztę 3. Pierwszą grupę możemy zapisać w postaci <span class="section__text--math">4k+1</span>, drugą grupę <span class="section__text--math">4k+3</span> , gdzie k jest liczbą całkowitą.</p>
-
-                <p class="section__text--paragraph">Twierdzenie mówi o tym, że: </p>
-
-                <blockquote class="section__text__quote">
-                    <q class="section__text__quote--text">Wszystkie liczby pierwsze postaci 4k+1 można przedstawić jako sumę dwóch kwadratów, i to tylko w jeden sposób oraz żadnej liczby pierwszej postaci 4k+3 nie można przedstawić w taki sposób.</q>
-                </blockquote>
-
-                <p class="section__text--paragraph">Przykłady takiego rozkładu: </p>
-
-                <ul class="section__text--list">
-                    <li><span class="section__text--math">5 = 1<sup>2</sup> + 2<sup>2</sup></span></li>
-                    <li><span class="section__text--math">13 = 2<sup>2</sup> + 3<sup>2</sup></span></li>
-                    <li><span class="section__text--math">17 = 1<sup>2</sup> + 4<sup>2</sup></span></li>
-                    <li><span class="section__text--math">29 = 2<sup>2</sup> + 5<sup>2</sup></span></li>
-                    <li><span class="section__text--math">37 = 1<sup>2</sup> + 6<sup>2</sup></span></li>
-                </ul>
-            </div>
-
-            <figure class="section__figure">
-                <img src="./images/Pierre de Fermat.png" alt="Zdjęcie Pierre de Fermat" class="section__figure__image">
-                <figcaption class="section__figure__description">Pierre de Fermat</figcaption>
-            </figure>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h2 class="section__text--main-header" id="o-stronie">O stronie</h2>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="section__text">
-                <h3 class="section__text--sidebar-header">Lorem ipsum</h3>
-
-                <p class="section__text--paragraph"><u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus soluta ipsa natus aperiam minima cumque enim dolorum magni? Dolore illum atque, velit excepturi expedita similique rerum ullam dicta voluptatum pariatur harum corporis adipisci accusantium repudiandae nihil ratione maiores, eveniet rem officia modi explicabo distinctio consequuntur minima! Beatae commodi voluptate minus!</u></p>
-            </div>
-        </section>
-
     <img src="./images/icons/arrow-side.svg" class="arrow-image closed">  
     </main>
 
     <footer class="footer">
         <p class="footer__paragraph">Strona przygotowana przez Radosława Rzepkę w ramach XIII edycji konkursu "Zobaczyć Matematykę" | 2021</p>
     </footer>
-    
 </body>
 
 </html>

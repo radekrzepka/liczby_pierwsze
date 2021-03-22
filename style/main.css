@@ -473,6 +473,7 @@
   }
   .section__text--image {
     width: 80%;
+    height: auto;
   }
   .section__figure {
     width: 40%;

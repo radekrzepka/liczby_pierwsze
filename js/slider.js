@@ -2,17 +2,17 @@ const slider = () => {
     const slideList = [{
             img: "./images/slider/slider-img1.jpg",
             text: "Rodzaje liczb pierwszych",
-            href: "#rodzaje"
+            href: "rodzaje.html"
         },
         {
             img: "./images/slider/slider-img2.jpg",
             text: "Algorytmy liczb pierwszych",
-            href: "#algorytmy"
+            href: "algorytmy.html"
         },
         {
             img: "./images/slider/slider-img3.jpg",
             text: "Ciekawostki",
-            href: "#ciekawostki"
+            href: "ciekawostki.html"
         }
     ];
 
