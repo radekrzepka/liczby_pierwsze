@@ -448,8 +448,8 @@
 }
 
 .section__figure__image {
-  height: 300px;
-  width: 250px;
+  width: 60%;
+  height: auto;
 }
 
 .section__figure__description {

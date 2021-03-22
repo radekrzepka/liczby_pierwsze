@@ -24,7 +24,7 @@ const mersennePrimes = () => {
     
         const discoverers = ["", "", "", "", "nieznany", "Pietro Cataldi", "Pietro Cataldi", "Leonhard Euler", "Iwan Perwuszin", "Ralph Ernest Powers", "Ralph Ernest Powers", "Édouard Lucas", "Raphael Mitchel Robinson", "Raphael Mitchel Robinson", "Raphael Mitchel Robinson", "Raphael Mitchel Robinson", "Raphael Mitchel Robinson", "Hans Riesel", "Alexander Hurwitz", "Alexander Hurwitz", "Donald Bruce Gillies", "Donald Bruce Gillies", "Donald Bruce Gillies", "Bryant Tuckerman", "Landon Curt Noll i Laura Nickel", "Landon Curt Noll", "Harry Lewis Nelson i David Slowinski", "David Slowinski", "Walt Colquitt i Luke Welsh", "David Slowinski", "David Slowinski", "David Slowinski i Paul Gage", "David Slowinski i Paul Gage", "David Slowinski i Paul Gage", "GIMPS / Joel Armengaud", "GIMPS / Gordon Spence", "GIMPS / Roland Clarkson", "GIMPS / Nayan Hajratwala", "GIMPS / Michael Cameron", "GIMPS / Michael Shafer", "GIMPS / Josh Findley", "GIMPS / Martin Nowak", "GIMPS / Curtis Cooper i Steven Boone", "GIMPS / Curtis Cooper i Steven Boone", "GIMPS / Hans-Michael Elvenich", "GIMPS / Odd Magnar Strindmo", "GIMPS / Edson Smith", "GIMPS / Curtis Cooper", "GIMPS / Curtis Cooper", "GIMPS / Jonathan Pace", "GIMPS / Patrick Laroche"];
     
-        if (number <= 0 || number === NaN) alert("Podaj dodatnią liczbę większą od 0");
+        if (number <= 0 || number === NaN) alert("Podaj dodatnią liczbę naturalną większą od 0");
         else if (number > 51) alert("Na dziś nie ma aż tyle liczb pierwszych Mersenne'a 😃");
         else {
             const table = document.createElement("table");

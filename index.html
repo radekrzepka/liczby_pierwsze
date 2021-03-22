@@ -23,6 +23,7 @@
     <script src="./js/arrow.js" defer></script>
     <script src="./js/mersenne-primes.js" defer></script>
     <script src="./js/lucas-test.js" defer></script>
+    <script src="./js/prime-test.js" defer></script>
 </head>
 
 <body>
@@ -268,6 +269,26 @@
         </section>
 
         <section class="section">
+            <div class="section__text prime-test-div">
+                <h3 class="section__text--sidebar-header">Sprawdzenie pierwszości poprez sprawdzenie podzielności</h3>
+
+                <p class="section__text--paragraph">Najprostrzą metodą aby zbadać czy liczba jest pierwsza jest sprawdzenie jej dzielników. Aby zbadać liczbę <span class="section__text--math">n</span> sprawdzamy kolejny liczby naturalne należącę do przedziału <span class="section__text--math">[2,..., &radic;n]</span>.</p>
+
+                <p class="section__text--paragraph">Jeżeli okazało by się, że któraś z tych liczb jest dzielniekiem, oznacza to, że nasza liczba nie jest pierwsza.</p>
+
+                <p class="section__text--paragraph">Powyższą metodą można sprawdzić pierwszość każdej liczby naturalnej większej od 1, jednak w porównaniu do <a href="#lucas-test">testu Lucasa-Lehmera</a> czas wykonania tego algorytmu dla bardzo dużych liczb jest dłuższy.</p>
+
+                <p class="section__text--paragraph"><i>(Dla n &lt; 1 000 000, wyświetlany jest cały algorytm, a w przypadku n &ge; 1 000 000 wyświetlany jest tylko wynik działania algorytmu oraz czas jego działania.)</i>.</p>
+
+                <label for="prime-test">Podaj liczbę, której pierwszość mam sprawdzić: </label>
+
+                <input type="number" class="section__text--input prime-test-input" id="prime-test"> <br>
+                
+                <button type="button" class="section__text--button prime-test-button">Sprawdź</button>
+            </div>
+        </section>
+
+        <section class="section">
             <div class="section__text">
                 <h3 class="section__text--sidebar-header">Sito Eratostenesa</h3>
 
@@ -318,7 +339,7 @@
 
                 <label for="lucas-input">Podaj którą liczbę Mersenne’a mam sprawdzić: </label>
 
-                <input type="number" class="section__text--input lucas-test-input" min="1" max="100" id="lucas-input"> <br>
+                <input type="number" class="section__text--input lucas-test-input" id="lucas-input"> <br>
                 
                 <button type="button" class="section__text--button lucas-test-button">Sprawdź</button>
             </div>

@@ -12,7 +12,7 @@ const lucasTest = () => {
             divToDelete.remove();
         }
 
-        if (nMersenneNumber <= 0) alert("Podaj dodatnią liczbę większą od 0");
+        if (nMersenneNumber <= 0) alert("Podaj dodatnią liczbę naturalną większą od 0");
         else if (nMersenneNumber >= 10000) alert("Za duża liczba");
         else {
             const number = BigInt((2n ** nMersenneNumber) - 1n);
@@ -40,7 +40,7 @@ const lucasTest = () => {
             const timeEnd = new Date().getTime();
 
             newDiv.innerHTML += `Liczba 2<sup>${nMersenneNumber}</sup> - 1 = ${number} ${s == 0? " <strong>jest pierwsza</strong>": " <strong>jest złożona</strong>"}. <br>`;
-            newDiv.innerHTML += `Czas wykonania algorytmu: ${timeEnd-timeStart} ms`;
+            newDiv.innerHTML += `Czas wykonania algorytmu: ${timeEnd-timeStart} ms.`;
 
             div.appendChild(newDiv);
         }
