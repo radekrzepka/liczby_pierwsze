@@ -354,6 +354,13 @@
   margin-left: 20px;
 }
 
+.section__text--canvas {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border: 1px solid #000;
+  background-color: #f9f9f9;
+}
+
 .section__text--paragraph {
   line-height: 1.6;
   font-size: 16px;
