@@ -140,13 +140,36 @@
         font-size: 20px;
         font-weight: bold;
 
-        &__item--link:link,
-        &__item--link:visited,
-        &__item--link:hover,
-        &__item--link:active {
-            text-decoration: none;
-            color: $black;
-        }    
+        &__item {
+            opacity: 0.8;
+            position: relative;
+
+            &::before {
+                transition: 300ms;
+                height: 3px;
+                content: "";
+                position: absolute;
+                background-color: $black;
+                width: 0%;
+                bottom: 0;
+            }
+
+            &:hover {
+                opacity: 1;
+
+                &::before {
+                    width: 100%;
+                }
+            }
+
+            &--link:link,
+            &--link:visited,
+            &--link:hover,
+            &--link:active {
+                text-decoration: none;
+                color: $black;
+            }    
+        }
     }
 }
 
