@@ -439,6 +439,12 @@
   width: 60%;
 }
 
+.section__text--image__description {
+  font-style: italic;
+  margin-top: 5px;
+  width: 60%;
+}
+
 .section__figure {
   width: 30%;
   display: -webkit-box;
@@ -452,6 +458,7 @@
       -ms-flex-align: end;
           align-items: flex-end;
   margin-right: 20px;
+  text-align: right;
 }
 
 .section__figure__image {
@@ -462,6 +469,7 @@
 .section__figure__description {
   font-style: italic;
   margin-top: 5px;
+  width: 60%;
 }
 
 @media (max-width: 1440px) {
@@ -525,6 +533,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
   }
 }
 
