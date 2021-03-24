@@ -23,7 +23,7 @@ const slider = () => {
 
     let active = 0;
 
-    const time = 2000;
+    const time = 3500;
 
     const changeContent = () => {
         header.style.backgroundImage = `url(${slideList[active].img})`;
@@ -33,6 +33,16 @@ const slider = () => {
         const activeDot = dots.findIndex(dot => dot.classList.contains("active"));
         dots[activeDot].classList.remove("active");
         dots[active].classList.add("active");
+
+        header.animate([{
+                opacity: '0.85'
+            },
+            {
+                opacity: '1'
+            }
+        ], {
+            duration: 1000,
+        });
     }
 
     const changeSlide = () => {

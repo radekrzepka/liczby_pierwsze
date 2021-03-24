@@ -7,6 +7,45 @@
     display: flex;
     padding-top: 50px;
 
+    &__technologies{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &--div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &--header {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        &--link {
+            border: 3px solid $green;
+            margin-bottom: 20px;
+            padding: 5px 0;
+            font-weight: bold;
+            text-align: center;
+            width: 50%;
+            cursor: pointer;
+            text-decoration: none;
+
+            &:link,
+            &:visited {
+                color: $black;
+            }   
+
+            &:hover, 
+            &:active {
+                background-color: $green;
+                color: $white;
+            }
+        }
+    }
+
     &__text {
         width: 70%;
         margin-left: 50px;
@@ -183,6 +222,19 @@
 @media(max-width: $smallTabletWidth) {
     .section {
         flex-direction: column; 
+
+        &__technologies{
+            grid-template-columns: 1fr;
+            text-align: center;
+
+            &--header {
+                font-size: 26px;
+            }
+
+            &--link {
+                width: 90%;
+            }
+        }
 
         &__text {
             width: 95%;

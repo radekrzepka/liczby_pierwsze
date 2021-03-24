@@ -140,7 +140,7 @@
         font-size: 20px;
         font-weight: bold;
 
-        &__item {
+        &__item--link {
             opacity: 0.8;
             position: relative;
 
@@ -162,10 +162,10 @@
                 }
             }
 
-            &--link:link,
-            &--link:visited,
-            &--link:hover,
-            &--link:active {
+            &:link,
+            &:visited,
+            &:hover,
+            &:active {
                 text-decoration: none;
                 color: $black;
             }    
