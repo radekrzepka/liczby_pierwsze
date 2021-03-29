@@ -405,6 +405,28 @@
   margin-bottom: 15px;
 }
 
+.section__text__table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+.section__text__table tr, .section__text__table td {
+  border: 1px solid #000;
+}
+
+.section__text__table td {
+  padding: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+.section__text__table tr td:nth-child(1) {
+  background-color: #037e51;
+  color: #fff;
+  font-weight: bold;
+  width: 20%;
+}
+
 .section__text--list {
   margin-left: 50px;
 }

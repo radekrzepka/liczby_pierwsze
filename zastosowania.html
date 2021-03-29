@@ -85,23 +85,87 @@
             <div class="section__text">
                 <h2 class="section__text--sidebar-header">RSA</h2>
 
-                <p class="section__text--paragraph">W 1977 roku trzej profesorowie z MIT (Massachusetts Institute of Technology) w USA, Ronald Rivest, Adi Shamir i Leonard Adleman, opublikowali nowy rodzaj szyfrowania, którego nazwano od pierwszych liter ich nazwisk <strong>RSA</strong>. Algorytm RSA jest aktualnie jedynm z najpopularniejszych asymetrycznych algorytmów kryptograficznych. Jego zastosowanie można znaleźć w szyfrowaniu wiadomości, w operacjach między bankami oraz w komunikatorach internetowych. W tym momencie warto wyjaśnić czym różni się symetryczny system szyfrowania od niesymetrycznego. Symetryczny system szyfrowania to taki, w którym klucz szyfrujący pozwala zarówno szyfrować dane, jak również odszyfrowywać je. Jego wadą jest to, że konieczne jest ścisłe chronienie klucz. Zaletą niesymetrycznego algorytmu jakim jest algorytm RSA jest to, że są dwa klucze: publiczny, któy umożliwia jedynie zaszyfrowanie danych i w żaden sposób nie ułatwia ich odczytania dzięki czemu nie musi być chroniony oraz prywatny, który służy do odczytywania informacji zakodowanych przy pomocy pierwszego klucza. Klucz ten nie jest sciśle chroniony i nie udostępniony do pubicznej informacji tak jak klucz publiczny.</p>
+                <p class="section__text--paragraph">W 1977 roku trzej profesorowie z MIT (Massachusetts Institute of Technology) w USA, Ronald Rivest, Adi Shamir i Leonard Adleman opublikowali nowy rodzaj szyfrowania, którego nazwano od pierwszych liter ich nazwisk <strong>RSA</strong>. Algorytm RSA jest aktualnie jednym z najpopularniejszych asymetrycznych algorytmów kryptograficznych. Jego zastosowanie można znaleźć w szyfrowaniu wiadomości, w operacjach między bankami oraz w komunikatorach internetowych. </p>
+                    
+                <p class="section__text--paragraph">W tym momencie warto wyjaśnić czym różni się symetryczny system szyfrowania od niesymetrycznego. Symetryczny system szyfrowania to taki, w którym klucz szyfrujący pozwala zarówno szyfrować dane, jak również odszyfrowywać je. Jego wadą jest to, że konieczne jest ścisłe chronienie kluczy. Niesymetryczny algorytm jakim jest algorytm RSA charakteryzuje się tym, że występują wnim dwa klucze: publiczny, któy umożliwia jedynie zaszyfrowanie danych i w żaden sposób nie ułatwia ich odczytanie dzięki czemu nie musi być chroniony. Drugim kluczem jest klucz prywatny, który służy jedynie do odczytywania informacji zakodowanych przy pomocy publicznego klucza. Klucz ten jednak musi być sciśle chroniony, ponieważ jego znajomośc umożliwiłaby odczytanie zaszyfrowanej wiadomości.</p>
 
-                <p class="section__text--paragraph">Całym algorytm można podzielić na trzy części</p>
+                <p class="section__text--paragraph">Całym algorytm RSA można podzielić na kilka części: </p>
 
                 <ol class="section__text--list">
-                    <li>Wygenerowanie kluczy publicznego i prywatnego.</li>
-                    <li>Użytkownik z kluczem publicznym szyfruje swoje dane. Następnie wysyła zaszyfrowane dane do adresata. Deszyfracja nie jest możliwa bez klucza tajnego co nie wymaga potrzeby ukrywania klucza publicznego.</li>
-                    <li>Adresat odszyfrowuje wiadomość za pomocą klucza tajnego.</li>
+                    <li>Wygenerowanie klucza publicznego oraz prywatnego.</li>
+                    <li>Zaszyfrowanie danych przy użyciu klucza publicznego oraz wysłanie zaszyfrowanych danych do adresata.</li>
+                    <li>Deszyfracja wiadomości za pomocą klucza prywatnego przez odbiorcę.</li>
                 </ol>
 
                 <h2 class="section__text--sidebar-header">Tworzenie klucza RSA</h2>
 
-                <table>
-                    <tr><td>p = 19, q = 17</td><td></td></tr>
+                <table class="section__text__table">
+                    <tr>
+                        <td>p = 19 <br> q = 17</td>
+                        <td>Wybranie dwóch dowolnych liczb pierwszych. Dla przykładu będę korzytsać z małych liczb pierwszych, aby ułatwić obliczenia. W rzeczywistości dla klucza 2048-bitowego, który jest aktualnie wykorzystywany, liczby te są rzędu 2<sup>2048</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Ø = 288</td>
+                        <td>Obliczamy funkcję Eulera Ø = (p - 1) * (q - 1): <br> Ø = (19 - 1) * (17 - 1) = 18 * 16 = 288</td>
+                    </tr>
+                    <tr>
+                        <td>n = 323</td>
+                        <td>Obliczamy moduł n = p * q: <br> n = 19 * 17 = 323</td>
+                    </tr>
+                    <tr>
+                        <td>e = 35</td>
+                        <td>Wyznaczamy wykładnik publiczny e, który jest względnie pierwszy wraz z Ø. Oznacza to, że NWD(e,Ø) powinno być 1. Liczba ta nie musi być pierwsza. Dla naszego Ø = 288, przykładem liczby spełniającej ten warunek jest e = 35</td>
+                    </tr>
+                    <tr>
+                        <td>d = 107</td>
+                        <td>Teraz wyznaczamy wykładnik prywatny, który ma być odwrotnością modulo Ø liczby e co oznacza, że <br>d * 35 mod 288 = 1 <br>Liczbą spełniającą ten warunek jest 107</td>
+                    </tr>
+                    <tr>
+                        <td>klucz publiczny [35, 323]</td>
+                        <td>Naszym kluczem publicznym są liczby: [e, n]</td>
+                    </tr>
+                    <tr>
+                        <td>klucz prywatny [107, 323]</td>
+                        <td>Naszym kluczem prywatnym są liczby: [d, n]</td>
+                    </tr>
                 </table>
 
-                <!--TODO: Opisać jak powstają klucze RSA na tabelach -->
+                <h2 class="section__text--sidebar-header">Szyfrowanie danych przy użyciu klucza publicznego</h2>
+
+                <table class="section__text__table">
+                    <tr>
+                        <td>e = 35 <br>n = 323</td>
+                        <td>Do zaszyfrowania użyjemy klucza publicznego w postaci liczb e i n, który zostaje wysłany przez adresata</td>
+                    </tr>
+                    <tr>
+                        <td>t = 36</td>
+                        <td>Aby zaszyfrować wiadomość nalez zamienić znaki na liczby naturalne t. Liczby te muszą spełniać nierówność 0 &lt; t &lt; n. Osoba do której wysyłamy tę wiadomośc musi rówenież znać nasz sposób kodowania. Tym zajmują się oprogramowania które szyfrująi deszyfrują wiadomości, które posiada odbiorca i nadawca. Dla przykładu zaszyfrujmy literę b do której przypiszemy liczbę 36.</td>
+                    </tr>
+                    <tr>
+                        <td>c = 161</td>
+                        <td>Następnym krokiem jest wyznaczenie liczby c ze wzoru c = t<sup>e</sup> mod n <br> c = 36<sup>35</sup> mod 323 = 161</td>
+                    </tr>
+                </table>
+
+                <h2 class="section__text--sidebar-header">Deszyfracja danych przy użyciu klucza prywatnego</h2>
+
+                <table class="section__text__table">
+                    <tr>
+                        <td>c = 161 <br> d = 107 <br>n = 323</td>
+                        <td>Od adresata otrzymujemy zaszyfrowaną wiadomośc c, oraz klucz prywatny w postaci liczb d i n </td>
+                    </tr>
+                    <tr>
+                        <td>t = 36</td>
+                        <td>Następnie należy wykonać operacje t = c<sup>d</sup> mod n, aby zdeszyfrować wiadomość <br> t = 161<sup>107</sup> mod 323 = 36</td>
+                    </tr>
+                    <tr>
+                        <td>36 &rightarrow; b</td>
+                        <td>Dzięki tej operacji oraz znając sposób kodowania przez adresata zamieniamy 36 na b</td>
+                    </tr>
+                </table>
+
+
+                <!--TODO: Stworzyć algorytm do generowania własnych kluczy RSA -->
 
                 <p class="section__text--paragraph">Bezpieczeństwo tego algorytmu oprate jest na trudności rozkładu dużych liczb na czynniki pierwsze. W 2009 roku grupie naukowców udało się złamać klucz o długości 768 bitów co trwało aż 2 lata, a wynik pracy algorytmów deszyfrujących zajął aż 5 TB danych! Akutalnie standartem jest klucz 2048 bitowy. Cała siła tego algorytmu tkwi w matematycznym problemie znalezienia dwóch podzielników dużej liczby, które po przemnożeniu dają w wyniku tę bardzo dużą liczbę. Dla komputerów mnożenie jest procesem szybkim, ale dzielenie już nie.</p>
 

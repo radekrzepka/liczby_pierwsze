@@ -54,6 +54,28 @@
             margin-bottom: 15px;
         }
 
+        &__table {
+            border: 1px solid $black;
+            border-collapse: collapse;
+
+            tr,td {
+                border: 1px solid $black;
+            }
+
+            td {
+                padding: 10px;
+                line-height: 1.5;
+                letter-spacing: 0.01em
+            }
+
+            tr td:nth-child(1){
+                background-color: $green;
+                color: $white;
+                font-weight: bold;
+                width: 20%;
+            }
+        }
+
         &--list {
             margin-left: 50px; 
 
