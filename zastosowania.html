@@ -85,9 +85,31 @@
             <div class="section__text">
                 <h2 class="section__text--sidebar-header">RSA</h2>
 
-                <p class="section__text--paragraph"><strong>Algorytm RSA</strong> jest jednym z pierwszych obecnie najpopularniejszych asymetrycznych algorytmów kryptograficznych. Stosuje się go do szyfrowania wiadomości jak i do podpisów cyfrowych.</p>
+                <p class="section__text--paragraph">W 1977 roku trzej profesorowie z MIT (Massachusetts Institute of Technology) w USA, Ronald Rivest, Adi Shamir i Leonard Adleman, opublikowali nowy rodzaj szyfrowania, którego nazwano od pierwszych liter ich nazwisk <strong>RSA</strong>. Algorytm RSA jest aktualnie jedynm z najpopularniejszych asymetrycznych algorytmów kryptograficznych. Jego zastosowanie można znaleźć w szyfrowaniu wiadomości, w operacjach między bankami oraz w komunikatorach internetowych. W tym momencie warto wyjaśnić czym różni się symetryczny system szyfrowania od niesymetrycznego. Symetryczny system szyfrowania to taki, w którym klucz szyfrujący pozwala zarówno szyfrować dane, jak również odszyfrowywać je. Jego wadą jest to, że konieczne jest ścisłe chronienie klucz. Zaletą niesymetrycznego algorytmu jakim jest algorytm RSA jest to, że są dwa klucze: publiczny, któy umożliwia jedynie zaszyfrowanie danych i w żaden sposób nie ułatwia ich odczytania dzięki czemu nie musi być chroniony oraz prywatny, który służy do odczytywania informacji zakodowanych przy pomocy pierwszego klucza. Klucz ten nie jest sciśle chroniony i nie udostępniony do pubicznej informacji tak jak klucz publiczny.</p>
 
-                <p class="section__text--paragraph">W 1977 roku trzej profesorowie z MIT w USA, Ronald Rivest, Adi Shamir i Leonard Adleman, opublikowali nowy rodzaj szyfrowania, którego nazwano od pierwszych liter ich nazwisk <strong>RSA</strong>. Algorytm RSA jest aktualnie jedynm z najpopularniejszych asymetrycznych algorytmów kryptograficznych. Stosuje się go do szyfrowania wiadomości jak i do podpisów cyfrowych. W tym momencie warto wyjaśnić czym różni się symetryczny system szyfrowania od niesymetrycznego. Symetryczny system szyfrowania to taki, w którym klucz szyfrujący pozwala zarówno szyfrować dane, jak również odszyfrowywać je. Jego wadą jest to, że konieczne jest ścisłe chronienie kluczy. Zaletą niesymetrycznego algorytmu jakim jest algorytm RSA jest to, że są dwa klucze: publiczny, któy umożliwia jedynie zaszyfrowanie danych i w żaden sposób nie ułatwia ich odczytania dzięki czemu nie musi być chroniony oraz prywatny, który służy do odczytywania informacji zakodowanych przy pomocy pierwszego klucza. Klucz ten nie jest udostępniany publicznie.</p>
+                <p class="section__text--paragraph">Całym algorytm można podzielić na trzy części</p>
+
+                <ol class="section__text--list">
+                    <li>Wygenerowanie kluczy publicznego i prywatnego.</li>
+                    <li>Użytkownik z kluczem publicznym szyfruje swoje dane. Następnie wysyła zaszyfrowane dane do adresata. Deszyfracja nie jest możliwa bez klucza tajnego co nie wymaga potrzeby ukrywania klucza publicznego.</li>
+                    <li>Adresat odszyfrowuje wiadomość za pomocą klucza tajnego.</li>
+                </ol>
+
+                <h2 class="section__text--sidebar-header">Tworzenie klucza RSA</h2>
+
+                <table>
+                    <tr><td>p = 19, q = 17</td><td></td></tr>
+                </table>
+
+                <!--TODO: Opisać jak powstają klucze RSA na tabelach -->
+
+                <p class="section__text--paragraph">Bezpieczeństwo tego algorytmu oprate jest na trudności rozkładu dużych liczb na czynniki pierwsze. W 2009 roku grupie naukowców udało się złamać klucz o długości 768 bitów co trwało aż 2 lata, a wynik pracy algorytmów deszyfrujących zajął aż 5 TB danych! Akutalnie standartem jest klucz 2048 bitowy. Cała siła tego algorytmu tkwi w matematycznym problemie znalezienia dwóch podzielników dużej liczby, które po przemnożeniu dają w wyniku tę bardzo dużą liczbę. Dla komputerów mnożenie jest procesem szybkim, ale dzielenie już nie.</p>
+
+                <p class="section__text--paragraph">Najsłabszym ogniwem algorytmu RSA jest konieczność ochrony klucza prywatnego. Nie ważne jak bardzo matematycznie będzie skomplikowany klucz prywatny, jeżeli hackerowi uda się uzyskać do niego dostęp przy pomocy przejęcia kontroli nad serwerem to będzie w stanie przejąć zaszyfrowaną wiadomość. Jednak przy odpowiednich zabezpieczeniu wysłania klucza prywatnego rozszyfrowanie jest praktycznie niemożliwe. Całe bezpieczeństwo tego algorytmu opiera się na czasie. Współczesne szyfry kryptograficzne są tak zaprojektowane, aby ich dekodowanie trwało nieskończenie długo, czyli w praktyce nie będzie to możliwe za życia całej cywilizacji ludzkości. I tutaj pojawiają się komputery kwantowe.</p>
+
+                <p class="section__text--paragraph">Komputery kwantowe są nieporównywalnie potężniejsze niż domowe komputery czy serwery. Jak bardzo? Normalnemu komputerowi o łamanie klucza 1024-bitowego zajęłoby około 1.5 miliona lat. Ale już temu samemu komputerowi złamanie klucza o długości 2048-bitów zajęłoby 4 miliardy razy dłużej. Aby uzmysłowić sobie jak długo by to trwało to licząc, że wszechświat ma ok. 13,7 miliardów lat, złamanie tego szyfru trwało by 500 000 razy dłużej! Jednakże czy komputery kwantowe są na tyle szybkie aby zagroźić szyfrowi RSA-2048? W 2015 roku eksperci oszacowali, że komputer kwantowy będzie potrzebował miliarda kubitów, aby złamać szyfrowanie oparte o RSA-2048 w 8 godzin! Aktualnie nowoczesne komputery kwantowe posiadają ok. 50-80 kubitów, jednakże przy obecnym tempie rozwój technologicznego może minąć kilkanaście lub nawet kilka lata aby szyfr RSA-2048 nie był już bezpieczny.</p>
+
+                <p class="section__text--paragraph">Aktualnie szyfrowania 2048-bitowego używa się w bankowości online, komunikatorach internetowych, szyfrowaniu poczty lub plików. Przy złamaniu tego szyfru wszystkie transakacje bankowe będą możliwe do odszyfrowania. Jednakże rozwiązanie tego problemu jest bardzo proste, gdyż zwiększnie klucza z 2048-bitowego do 4096-bitowego będzie już niemożliwe do rozszyfrowania w rozsządnym czasie nawet dla nowoczesnych komputerów kwantowych.</p>
             </div>
             <figure class="section__figure">
                 <img src="./images/Ronald Rivest.jpg" alt="Zdjęcie Ronalda Rivesta" class="section__figure__image">

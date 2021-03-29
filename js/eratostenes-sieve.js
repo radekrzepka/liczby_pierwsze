@@ -8,8 +8,9 @@ const eratostenesSieve = () => {
             const divToDelete = document.querySelector(".eratostenes-code-div");
             divToDelete.remove();
         }
-    
-        const number = parseInt(input.value);
+
+        if (input.value === "") number = 0;
+        else number = parseInt(input.value);
     
         if (number <= 1) alert("Podaj dodatnią liczbę naturalną większą od 1");
         else if (number>100000) alert("Za duża liczba");

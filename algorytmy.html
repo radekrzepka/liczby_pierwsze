@@ -91,9 +91,9 @@
 
                 <p class="section__text--paragraph">Najprostrzą metodą aby zbadać czy liczba jest pierwsza jest sprawdzenie jej dzielników. Aby zbadać liczbę <span class="section__text--math">n</span> sprawdzamy kolejny liczby naturalne należącę do przedziału <span class="section__text--math">[2,..., &radic;n]</span>.</p>
 
-                <p class="section__text--paragraph">Jeżeli okazało by się, że któraś z tych liczb jest dzielniekiem, oznacza to, że nasza liczba nie jest pierwsza.</p>
+                <p class="section__text--paragraph">Jeżeli okazało by się, że któraś z tych liczb jest dzielniekiem naszej liczby <span class="section__text--math">n</span>, oznacza to, że nasza liczba nie jest pierwsza.</p>
 
-                <p class="section__text--paragraph">Jednak teraz pojawia się pytanie dlaczego wystarczy sprawdzic tylko liczby od 2 do &radic;n</p>
+                <p class="section__text--paragraph">Jednak teraz pojawia się pytanie dlaczego wystarczy sprawdzic tylko liczby od <span class="section__text--math">2 do &radic;n</span></p>
 
                 <p class="section__text--paragraph">Przenalizujmy to na przykładzie liczb: 23, 33 i 36.</p>
 
@@ -109,9 +109,11 @@
 
                 <p class="section__text--math">D<sub>36</sub> = {1, 2, 3, 4, 6, 9, 12, 18, 36}</p>
 
-                <p class="section__text--paragraph">Mozna łatwo zauważyć, że jeśli liczba dzielników liczby <span class="section__text--math">n</span> będzie tyle samo po lewej stronie jak i po prawej <span class="section__text--math">&radic;n</span>. Dzięki tym przykładom można zauważyć, że jeśli jedynym dzielnikiem mniejszym lub równym <span class="section__text--math">&radic;n</span> jest 1 to liczba ta jest pierwsza.</p>
+                <p class="section__text--paragraph">Mozna łatwo zauważyć, że liczba <span class="section__text--math">n</span> ma tyle samo dzielników większych <span class="section__text--math"> &radic;n</span> jak i mniejszych od <span class="section__text--math"> &radic;n</span>. Dzięki tym przykładom można zauważyć, że jeśli jedynym dzielnikiem mniejszym lub równym <span class="section__text--math">&radic;n</span> jest 1 to liczba ta jest pierwsza.</p>
 
                 <p class="section__text--paragraph">Powyższą metodą można sprawdzić pierwszość każdej liczby naturalnej większej od 1, jednak w porównaniu do <a href="#lucas-test">testu Lucasa-Lehmera</a> czas wykonania tego algorytmu dla bardzo dużych liczb jest dłuższy.</p>
+
+                <p class="section__text--paragraph">Poniżej można wpisać dowolną liczbę i sprawdzić to czy jest pierwsza oraz to jak działa ten algorytm.</p>
 
                 <p class="section__text--paragraph"><i>(Dla n &lt; 1 000 000, wyświetlany jest cały algorytm, a w przypadku n &ge; 1 000 000 wyświetlany jest tylko wynik działania algorytmu oraz czas jego działania.)</i>.</p>
 
@@ -141,7 +143,9 @@
 
                 <img src="./images/sito eratostenesa.gif" alt="Przedstawienie działania sita Eratostenesa" class="section__text--image"><br>
 
-                <label for="eratostenes-input">Podaj liczbę n do której mam wyznaczyć wszystkie liczby pierwsze sitem Eratostenesa: </label>
+                <p class="section__text--paragraph">Poniżej można wpisać dowonlą liczbę <span class="section__text--math">n</span>, dla której sito znajdzie wszystkie liczby pierwsze mniejsze lub równe <span class="section__text--math">n</span></p>
+
+                <label for="eratostenes-input">Podaj liczbę <span class="section__text--math">n</span> do której mam wyznaczyć wszystkie liczby pierwsze sitem Eratostenesa: </label>
 
                 <input type="number" class="section__text--input eratostenes-input" id="eratostenes-input"> <br>
                 
@@ -165,7 +169,7 @@
 
                 <p class="section__text--math">L<sub>n</sub>= L<sub>n-1</sub><sup>2</sup>-2</p>  
 
-                <p class="section__text--paragraph">Nie wiadomo, jak Lucas wymyślił tę własność i że nie potrafił jej formalnie udowodnić.</p>
+                <p class="section__text--paragraph">Nie wiadomo, jak Lucas wymyślił tę własność. Nie potrafił jej również w żaden sposób udowodnić.</p>
                     
                 <p class="section__text--paragraph"> Warunek podany przez Lucasa został udowodniony dopiero w XX wieku przez Amerykanina Derricka Henry'ego Lehmera i od tego czasu nosił nazwą <strong>testu Lucasa-Lehmera</strong>.</p>
                     
@@ -173,9 +177,9 @@
                    
                 <p class="section__text--paragraph">Zaletą tego algorytmu są takie, że działa bardzo szybko i dla przykłady liczbę <span class="section__text--math">2<sup>89</sup>-1</span> posiadającą 27 cyfr potrafi określić jako liczbę pierwszą w ciągu 1ms! </p>
 
-                <p class="section__text--paragraph">Jego wadą jest jednak, że używać można go tylko dla liczb Mersenne’a.</p>
+                <p class="section__text--paragraph">Jego główną wadą jest fakt, że używać można go tylko dla liczb Mersenne’a.</p>
 
-                <p class="section__text--paragraph">Poniżej można sprawdzić działanie testu Lucasa-Lehmera. Poniżej można wprowadzić liczbę n, która będzie n-tą liczbą Mersenne’a i sprawdzić działanie testu oraz czy ta liczba jest pierwsza.</p>
+                <p class="section__text--paragraph">Poniżej można sprawdzić działanie testu Lucasa-Lehmera. Poniżej można wprowadzić liczbę <span class="section__text--math">n</span>, która będzie n-tą liczbą Mersenne’a i sprawdzić działanie testu oraz czy ta liczba jest pierwsza.</p>
 
                 <p class="section__text--paragraph"><i>(Dla n &lt; 70, wyświetlany jest cały algorytm, a w przypadku n &ge; 70 wyświetlany jest tylko wynik działania algorytmu oraz czas jego działania)</i>.</p>
 
