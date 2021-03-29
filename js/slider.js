@@ -41,7 +41,7 @@ const slider = () => {
                 opacity: '1'
             }
         ], {
-            duration: 1000,
+            duration: 2000,
         });
     }
 
