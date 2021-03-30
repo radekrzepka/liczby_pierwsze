@@ -378,6 +378,7 @@
 
 .section__technologies--link {
   border: 3px solid #037e51;
+  border-radius: 7px;
   margin-bottom: 20px;
   padding: 5px 0;
   font-weight: bold;
