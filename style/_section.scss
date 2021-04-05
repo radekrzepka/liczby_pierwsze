@@ -58,6 +58,8 @@
         &__table {
             border: 1px solid $black;
             border-collapse: collapse;
+            table-layout: fixed;
+            width: 100%;
 
             tr,td {
                 border: 1px solid $black;
@@ -76,6 +78,18 @@
                 width: 20%;
             }
         }
+
+        &__density-table {
+            border: 1px solid $black;
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 100%;
+            font-size: 14px;
+
+            tr,td,th {
+                border: 1px solid $black;
+            }
+         }
 
         &--list {
             margin-left: 50px; 
@@ -160,22 +174,6 @@
             font-size: 20px;
         }
 
-        &--table {
-            border: 1px solid $black;
-            border-collapse: collapse;
-            width: 100%;
-
-            tr:first-child {
-                background-color: $green;
-                color: $white;
-            }
-
-            tr,td,th {
-                border: 1px solid $black;
-                padding: 5px;
-            }
-        }
-
         &--image {
             width: 60%;
 
@@ -212,6 +210,13 @@
     .main {
         @include laptopWebsiteMargin;
     }
+
+    .section__text__density-table {
+        overflow-wrap: break-word;
+        td {
+            padding: 10px 0;
+        }
+    }
 }
 
 @media(max-width: $smallLaptopWidth) {
@@ -233,7 +238,6 @@
         width: 40%;
         margin-right: 10px;
     }
-
 }
 
 @media(max-width: $tabletWidth) {

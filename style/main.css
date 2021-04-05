@@ -409,6 +409,8 @@
 .section__text__table {
   border: 1px solid #000;
   border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
 }
 
 .section__text__table tr, .section__text__table td {
@@ -426,6 +428,18 @@
   color: #fff;
   font-weight: bold;
   width: 20%;
+}
+
+.section__text__density-table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  font-size: 14px;
+}
+
+.section__text__density-table tr, .section__text__density-table td, .section__text__density-table th {
+  border: 1px solid #000;
 }
 
 .section__text--list {
@@ -512,22 +526,6 @@
   font-size: 20px;
 }
 
-.section__text--table {
-  border: 1px solid #000;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.section__text--table tr:first-child {
-  background-color: #037e51;
-  color: #fff;
-}
-
-.section__text--table tr, .section__text--table td, .section__text--table th {
-  border: 1px solid #000;
-  padding: 5px;
-}
-
 .section__text--image {
   width: 60%;
 }
@@ -568,6 +566,12 @@
 @media (max-width: 1440px) {
   .main {
     margin: 0 75px;
+  }
+  .section__text__density-table {
+    overflow-wrap: break-word;
+  }
+  .section__text__density-table td {
+    padding: 10px 0;
   }
 }
 
