@@ -4,8 +4,8 @@ const mersennePrimes = () => {
     const div = document.querySelector(".mersenne-primes-div");
 
     button.addEventListener("click", () => {
-        if (document.querySelector(".section__text--table") !== null) {
-            const tabToDelete = document.querySelector(".section__text--table");
+        if (document.querySelector(".section__text--mersenne-table") !== null) {
+            const tabToDelete = document.querySelector(".section__text--mersenne-table");
             tabToDelete.remove();
         }
         if (document.querySelector(".mersenne-paragraph-info") !== null) {
@@ -28,7 +28,7 @@ const mersennePrimes = () => {
         else if (number > 51) alert("Ludzkość nie zna aż tylu liczb pierwszych Mersenne'a 😃");
         else {
             const table = document.createElement("table");
-            table.classList.add("section__text--table");
+            table.classList.add("section__text--mersenne-table");
             const tableHeader = "<tr><th>Lp.</th><th>n</th><th>M<sub>n</sub></th><th>Ilość cyfr w M<sub>n</sub></th><th class='table--delete-mobile'>Data odkrycia</th><th class='table--delete-mobile'>Odkrywca</th><th class='table--delete-mobile'>Liczba doskonała</th></tr>";
             table.innerHTML = tableHeader;
 

@@ -406,6 +406,21 @@
   margin-bottom: 15px;
 }
 
+.section__text--mersenne-table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.section__text--mersenne-table tr, .section__text--mersenne-table td, .section__text--mersenne-table th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.section__text--mersenne-table th {
+  background-color: #037e51;
+  color: #fff;
+}
+
 .section__text__table {
   border: 1px solid #000;
   border-collapse: collapse;
@@ -643,12 +658,12 @@
             align-items: center;
     text-align: center;
   }
-}
-
-@media (max-width: 425px) {
   .table--delete-mobile {
     display: none;
   }
+}
+
+@media (max-width: 425px) {
   .section__text--ferrier-image {
     width: 350px;
   }

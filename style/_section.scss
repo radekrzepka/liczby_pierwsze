@@ -55,6 +55,21 @@
             margin-bottom: 15px;
         }
 
+        &--mersenne-table {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+            tr,td,th {
+                border: 1px solid black;
+                padding: 5px;
+            }
+
+            th {
+                background-color: $green;
+                color: $white;
+            }
+        }
+
         &__table {
             border: 1px solid $black;
             border-collapse: collapse;
@@ -296,13 +311,13 @@
             text-align: center;
         }
     }
-}
 
-@media(max-width: $largePhoneWidth) {
     .table--delete-mobile {
         display: none;
     }
+}
 
+@media(max-width: $largePhoneWidth) {
     .section__text--ferrier-image {
         width: 350px;
     }
